@@ -7,7 +7,22 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        BACKGROUND: "#040104",
+        BLACK: "#1E1D1C",
+        WHITE: "#FDFAFE",
+        LIGHTBLACK: "#1D1D1D",
+        BORDER: "#F4F4F6",
+        ACCENT: "#9695DF",
+        GRAY: "#91908C",
+        RED: "#CA2422",
+      },
+      backgroundImage: {
+        GRADIENT: "linear-gradient(75.55deg, #8F72EC 20.49%, #5636C1 47.34%, #3C2396 79.41%)",
+        STROKE_GRADIENT: "linear-gradient(116.65deg, #FFFFFF 0%, rgba(204, 200, 255, 0.5) 53%, #CCC8FF 100%)",
+      },
+    },
   },
   plugins: [],
 };
