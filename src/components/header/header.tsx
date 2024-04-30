@@ -1,4 +1,3 @@
-import Container from "../container";
 import HeaderLink from "./header-link";
 import Logo from "../logo";
 
@@ -14,14 +13,14 @@ const headerLinks = [
 const Header = () => {
   return (
     <header className="header">
-      <Container className="flex items-center justify-between gap-6">
+      <div className="flex items-center justify-between gap-6">
         <Logo />
         <div className="flex items-center gap-6">
           {headerLinks.map((link) => (
             <HeaderLink key={link.name} title={link.name} href={link.href} />
           ))}
         </div>
-      </Container>
+      </div>
     </header>
   );
 };
