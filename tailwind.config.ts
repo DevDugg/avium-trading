@@ -36,6 +36,9 @@ const config: Config = {
         H3: "normal",
         BASE: "normal",
       },
+      gridTemplateColumns: {
+        FOUR: "repeat(4, 1fr)",
+      },
     },
   },
   plugins: [],
