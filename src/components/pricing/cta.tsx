@@ -3,8 +3,6 @@ interface CTAProps {
   link: string;
 }
 
-import Link from "next/link";
-
 const CTA = ({ link, title }: CTAProps) => {
   return (
     <a

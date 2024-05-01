@@ -5,7 +5,7 @@ import Link from "next/link";
 interface CTALinkProps {
   title: string;
   href: string;
-  width: string;
+  width?: string;
 }
 
 const CTALink = ({ title, href, width }: CTALinkProps) => {
