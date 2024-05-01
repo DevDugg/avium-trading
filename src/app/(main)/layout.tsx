@@ -1,5 +1,6 @@
 import "./globals.css";
 
+import ConfigProvider from "@/components/config-provider";
 import Footer from "@/components/footer/footer";
 import { Inter } from "next/font/google";
 import type { Metadata } from "next";
@@ -21,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} bg-BACKGROUND text-WHITE`}>
         <SmoothScroll>
-          {children}
+          <ConfigProvider>{children}</ConfigProvider>
           <Footer />
         </SmoothScroll>
       </body>
