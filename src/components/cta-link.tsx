@@ -19,7 +19,7 @@ const CTALink = ({ title, href, width }: CTALinkProps) => {
         className="cta-btn rounded-[100px] px-10 py-[10px] bg-GRADIENT flex items-center justify-center w-full"
         href={href}
       >
-        <span className="font-medium text-BASE w-fit h-fit">{title}</span>
+        <span className="font-medium text-lg w-fit h-fit">{title}</span>
       </Link>
     </div>
   );
