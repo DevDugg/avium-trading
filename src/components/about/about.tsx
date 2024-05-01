@@ -11,7 +11,7 @@ const About = () => {
           alt="About"
           width={610}
           height={565}
-          className="aspect-square max-w-[610px] w-full"
+          className="aspect-auto max-w-[610px] w-full"
         />
         <div className="flex flex-col gap-10">
           <h2 className="text-H2 pb-2">Your path to success</h2>
