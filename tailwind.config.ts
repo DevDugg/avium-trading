@@ -38,6 +38,7 @@ const config: Config = {
       },
       gridTemplateColumns: {
         FOUR: "repeat(4, 1fr)",
+        THREE: "repeat(3, 1fr)",
       },
     },
   },
