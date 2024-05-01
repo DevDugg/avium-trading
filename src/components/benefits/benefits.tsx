@@ -22,7 +22,7 @@ const benefits = [
 
 const Benefits = () => {
   return (
-    <section className="benefits" id="#benefits">
+    <section className="benefits" id="benefits">
       <Container className="flex flex-col gap-12">
         <h2 className="text-H2 font-bold text-center">What you will get at Avium</h2>
         <div className="grid grid-cols-THREE gap-2">

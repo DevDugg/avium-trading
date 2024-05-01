@@ -3,6 +3,7 @@ import Benefits from "@/components/benefits/benefits";
 import FAQ from "@/components/faq/faq";
 import Guarantees from "@/components/guarantees/guarantees";
 import Hero from "@/components/hero/hero";
+import Pricing from "@/components/pricing/pricing";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Guarantees />
       <Benefits />
       <About />
+      <Pricing />
       <FAQ />
     </main>
   );
