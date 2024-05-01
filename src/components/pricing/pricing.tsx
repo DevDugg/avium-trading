@@ -59,7 +59,7 @@ const Pricing = () => {
                 <h2 className="text-H2 font-bold">{pricingCardBig.title}</h2>
                 <p className="text-GRAY text-lg">{pricingCardBig.subtitle}</p>
               </div>
-              <CTALink href="#" title="Book a call" />
+              <CTALink href="#" title="Book a call" width="380px" />
             </div>
             <div className="flex flex-col gap-4">
               <span className="font-medium text-2xl">Features</span>
