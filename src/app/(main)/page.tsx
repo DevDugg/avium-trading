@@ -1,5 +1,6 @@
 import About from "@/components/about/about";
 import Benefits from "@/components/benefits/benefits";
+import Contact from "@/components/contact/contact";
 import FAQ from "@/components/faq/faq";
 import Guarantees from "@/components/guarantees/guarantees";
 import Hero from "@/components/hero/hero";
@@ -16,6 +17,7 @@ export default function Home() {
       <Pricing />
       <Testimonials />
       <FAQ />
+      <Contact />
     </main>
   );
 }

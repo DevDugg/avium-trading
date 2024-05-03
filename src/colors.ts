@@ -3,6 +3,7 @@ const colors = {
   BLACK: "#1E1D1C",
   WHITE: "#FDFAFE",
   LIGHTBLACK: "#1D1D1D",
+  LIGHTBLACK_HOVER: "#2A2A2A",
   BORDER: "#F4F4F6",
   ACCENT: "#9695DF",
   GRAY: "#91908C",
