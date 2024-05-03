@@ -1,7 +1,7 @@
 import CTALink from "../cta-link";
-import Container from "../container";
 import Feature from "./feature";
 import PricingCard from "./pricing-card";
+import SectionContainer from "../structure/section-container";
 
 const pricingCards = [
   {
@@ -45,7 +45,7 @@ const pricingCardBig = {
 const Pricing = () => {
   return (
     <section className="pricing" id="pricing">
-      <Container className="flex flex-col gap-12">
+      <SectionContainer>
         <h3 className="text-H3 font-bold">Pricing</h3>
         <div className="flex flex-col gap-2">
           <div className="grid grid-cols-THREE gap-2">
@@ -71,7 +71,7 @@ const Pricing = () => {
             </div>
           </div>
         </div>
-      </Container>
+      </SectionContainer>
     </section>
   );
 };

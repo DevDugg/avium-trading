@@ -1,5 +1,6 @@
 import Benefit from "./benefit";
-import Container from "../container";
+import SectionContainer from "../structure/section-container";
+import SectionTitle from "../structure/section-title";
 
 const benefits = [
   {
@@ -23,14 +24,14 @@ const benefits = [
 const Benefits = () => {
   return (
     <section className="benefits" id="benefits">
-      <Container className="flex flex-col gap-12">
-        <h2 className="text-H2 font-bold text-center">What you will get at Avium</h2>
+      <SectionContainer>
+        <SectionTitle>What you will get at Avium</SectionTitle>
         <div className="grid grid-cols-THREE gap-2">
           {benefits.map((benefit, i) => (
             <Benefit key={i} {...benefit} />
           ))}
         </div>
-      </Container>
+      </SectionContainer>
     </section>
   );
 };
