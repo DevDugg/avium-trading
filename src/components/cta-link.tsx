@@ -2,22 +2,13 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import variants from "@/variants/cta.variants";
 
 interface CTALinkProps {
   title: string;
   href: string;
   width?: string;
 }
-
-const variants = {
-  initial: {
-    backgroundPositionX: "0%",
-    backgroundPositionY: "0%",
-  },
-  hover: {
-    backgroundPositionX: "100%",
-  },
-};
 
 const CTALink = ({ title, href, width }: CTALinkProps) => {
   return (
@@ -28,7 +19,7 @@ const CTALink = ({ title, href, width }: CTALinkProps) => {
       initial={"initial"}
       whileHover={"hover"}
     >
-      <Link href={href}>
+      <Link href={href} className="w-full">
         <motion.div
           className="gradient-shift cta-btn rounded-[100px] px-10 py-[10px] bg-GRADIENT_SHIFT flex items-center justify-center w-full"
           variants={variants}
