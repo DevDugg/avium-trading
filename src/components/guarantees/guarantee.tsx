@@ -14,11 +14,13 @@ interface GuaranteeProps {
 }
 
 const Guarantee = ({ name, number, hoveredNumber, position }: GuaranteeProps) => {
-  const [latest, setLatest] = useState(0);
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.3,
   });
+
+  const [latest, setLatest] = useState(0);
+
   useIsomorphicLayoutEffect(() => {
     if (!inView) return;
     animate(latest, Number(number), {
@@ -41,6 +43,9 @@ const Guarantee = ({ name, number, hoveredNumber, position }: GuaranteeProps) =>
     >
       <motion.div
         className="absolute top-0 left-0 w-full h-full bg-GRADIENT -z-10 pointer-events-none"
+        initial={{
+          opacity: 0,
+        }}
         animate={{
           opacity: hoveredNumber === position ? 1 : 0,
         }}
