@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import colors from "@/colors";
+import headerVariants from "@/variants/header.variants";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 interface HeaderLinkProps {
   title: string;
@@ -10,11 +11,25 @@ interface HeaderLinkProps {
 }
 
 const HeaderLink = ({ title, href }: HeaderLinkProps) => {
+  const [hovered, setHovered] = useState(false);
   return (
-    <motion.div className="w-fit text-BASE" initial={{ color: colors.WHITE }} whileHover={{ color: colors.GRAY }}>
+    <motion.div
+      onMouseOver={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      className="w-fit text-BASE relative"
+      variants={headerVariants}
+      initial={"blockInitial"}
+      animate={hovered ? "blockHover" : "blockInitial"}
+    >
       <Link href={href} className="py-3">
         {title}
       </Link>
+      <motion.div
+        className="absolute top-[110%] border-b border-GRAY w-full"
+        variants={headerVariants}
+        initial={"childInitial"}
+        animate={hovered ? "childHover" : "childInitial"}
+      ></motion.div>
     </motion.div>
   );
 };

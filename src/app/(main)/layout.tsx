@@ -30,8 +30,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${bdo.className} bg-BACKGROUND text-WHITE`}>
         <SmoothScroll>
-          <ConfigProvider>{children}</ConfigProvider>
-          <Footer />
+          <ConfigProvider>
+            {children}
+            <Footer />
+          </ConfigProvider>
         </SmoothScroll>
       </body>
     </html>
