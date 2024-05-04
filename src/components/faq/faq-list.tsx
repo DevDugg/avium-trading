@@ -5,29 +5,19 @@ import { useState } from "react";
 
 const faqItems = [
   {
-    question: "What do I get exactly?",
+    question: "Who is the Mentorship for?",
     answer:
-      "Do you feel lost in trading? You’re just starting out and everything is overwhelming, or you’ve been trying but you don’t know why it’s just not working? Most traders trade without a proper strategy. As a result you’re likely to make many costly mistakes and get frustrated with trading and that frustration only leads to worse decisions. Trading isn’t easy, but we’re here to guide you through it.",
+      "Anyone who wants to learn how to trade for themselves. Whether you know nothing about trading or have been in the markets for a while but really want to get serious about it. Our mentorship program is designed to take anyone who is willing to learn and teach them to trade for themselves.",
   },
   {
-    question: "What do I get exactly?",
+    question: "Is it true that 90% of traders lose money?",
     answer:
-      "Do you feel lost in trading? You’re just starting out and everything is overwhelming, or you’ve been trying but you don’t know why it’s just not working? Most traders trade without a proper strategy. As a result you’re likely to make many costly mistakes and get frustrated with trading and that frustration only leads to worse decisions. Trading isn’t easy, but we’re here to guide you through it.",
+      "Yes. This is because the vast majority of new traders go into trading without learning first. It’s like letting a doctor operate without any training. Wouldn’t go very well would it? At Avium we provide that much needed education to help you join the 10% of winners.",
   },
   {
-    question: "What do I get exactly?",
+    question: "Why would you run a Mentorship if you’re so successful?",
     answer:
-      "Do you feel lost in trading? You’re just starting out and everything is overwhelming, or you’ve been trying but you don’t know why it’s just not working? Most traders trade without a proper strategy. As a result you’re likely to make many costly mistakes and get frustrated with trading and that frustration only leads to worse decisions. Trading isn’t easy, but we’re here to guide you through it.",
-  },
-  {
-    question: "What do I get exactly?",
-    answer:
-      "Do you feel lost in trading? You’re just starting out and everything is overwhelming, or you’ve been trying but you don’t know why it’s just not working? Most traders trade without a proper strategy. As a result you’re likely to make many costly mistakes and get frustrated with trading and that frustration only leads to worse decisions. Trading isn’t easy, but we’re here to guide you through it.",
-  },
-  {
-    question: "What do I get exactly?",
-    answer:
-      "Do you feel lost in trading? You’re just starting out and everything is overwhelming, or you’ve been trying but you don’t know why it’s just not working? Most traders trade without a proper strategy. As a result you’re likely to make many costly mistakes and get frustrated with trading and that frustration only leads to worse decisions. Trading isn’t easy, but we’re here to guide you through it.",
+      "A few reasons, firstly, we love trading and by extension telling people about it. One of the most satisfying feelings is seeing someone win and improving their situation using the things you taught them. Secondly, there is a lot of downtime with trading, time simply spent waiting, we think it’s better to fill that time with something productive.",
   },
 ];
 
