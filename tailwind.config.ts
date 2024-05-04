@@ -20,7 +20,11 @@ const config: Config = {
       },
       backgroundImage: {
         GRADIENT: "linear-gradient(75.55deg, #8F72EC 20.49%, #5636C1 47.34%, #3C2396 79.41%)",
+        GRADIENT_SHIFT:
+          "linear-gradient(75.55deg, #8F72EC 20.49%, #5636C1 47.34%, #3C2396 79.41%), linear-gradient(75.55deg, #3C2396 79.41%, #5636C1 47.34%, #8F72EC 20.49%)",
         STROKE_GRADIENT: "linear-gradient(116.65deg, #FFFFFF 0%, rgba(204, 200, 255, 0.5) 53%, #CCC8FF 100%)",
+        STROKE_GRADIENT_SHIFT:
+          "linear-gradient(116.65deg, #FFFFFF 0%, rgba(204, 200, 255, 0.5) 53%, #CCC8FF 100%), linear-gradient(116.65deg, #CCC8FF 100%, rgba(204, 200, 255, 0.5) 53%, #FFFFFF 0%)",
         TESTIMONIALS: "linear-gradient(180deg, #040104 0%, rgba(4, 1, 4, 0) 50%, #040104 100%);",
       },
       fontSize: {
