@@ -35,7 +35,7 @@ const Guarantee = ({ name, number, hoveredNumber, position }: GuaranteeProps) =>
   return (
     <motion.div
       ref={ref}
-      className="px-6 py-6 border-r border-WHITE relative"
+      className="px-6 py-6 border-r border-WHITE relative cursor-default"
       style={position === 0 ? { borderLeft: `1px solid ${colors.WHITE}` } : {}}
       animate={{
         borderColor: hoveredNumber !== null ? `${colors.WHITE}00` : colors.WHITE,
