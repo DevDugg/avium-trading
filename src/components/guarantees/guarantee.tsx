@@ -1,18 +1,38 @@
 "use client";
 
+import { animate, motion, useIsomorphicLayoutEffect } from "framer-motion";
+
 import colors from "@/colors";
-import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useState } from "react";
 
 interface GuaranteeProps {
-  number: string;
+  number: number;
   name: string;
   position: number;
   hoveredNumber: number | null;
 }
 
 const Guarantee = ({ name, number, hoveredNumber, position }: GuaranteeProps) => {
+  const [latest, setLatest] = useState(0);
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.3,
+  });
+  useIsomorphicLayoutEffect(() => {
+    if (!inView) return;
+    animate(latest, Number(number), {
+      onUpdate: (newLatest) => setLatest(Math.ceil(newLatest)),
+      duration: 3,
+      ease: "circOut",
+      mass: 5,
+      damping: 0.1,
+      restDelta: 0.01,
+    });
+  }, [inView]);
   return (
     <motion.div
+      ref={ref}
       className="px-6 py-6 border-r border-WHITE relative"
       style={position === 0 ? { borderLeft: `1px solid ${colors.WHITE}` } : {}}
       animate={{
@@ -26,7 +46,7 @@ const Guarantee = ({ name, number, hoveredNumber, position }: GuaranteeProps) =>
         }}
       ></motion.div>
       <div className="flex flex-col items-center gap-10 w-fit">
-        <span className="text-[80px] w-fit">{number}</span>
+        <span className="text-[80px] w-fit">{latest}+</span>
         <span className="text-lg w-fit">{name}</span>
       </div>
     </motion.div>

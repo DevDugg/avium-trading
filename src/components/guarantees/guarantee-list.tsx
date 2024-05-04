@@ -5,15 +5,15 @@ import { useState } from "react";
 
 const guarantees = [
   {
-    number: "42+",
+    number: 42,
     name: "Micro lessons",
   },
   {
-    number: "36+",
+    number: 36,
     name: "Workshops",
   },
   {
-    number: "12+",
+    number: 12,
     name: "Challenges",
   },
 ];
