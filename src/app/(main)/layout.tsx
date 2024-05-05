@@ -1,10 +1,13 @@
 import "./globals.css";
 
+import type { Metadata, Viewport } from "next";
+
 import ConfigProvider from "@/components/config-provider";
 import Footer from "@/components/footer/footer";
 import { Inter } from "next/font/google";
-import type { Metadata } from "next";
 import SmoothScroll from "@/components/smooth-scroll";
+import config from "@/config";
+import { getSEOTags } from "@/lib/seo";
 import localFont from "next/font/local";
 
 const bdo = localFont({
@@ -16,10 +19,14 @@ const bdo = localFont({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: "Avium Trading",
-  description: "Avium Trading",
+export const viewport: Viewport = {
+  // Will use the primary color of your theme to show a nice theme color in the URL bar of supported browsers
+  themeColor: config.colors.main,
+  width: "device-width",
+  initialScale: 1,
 };
+
+export const metadata = getSEOTags();
 
 export default function RootLayout({
   children,
