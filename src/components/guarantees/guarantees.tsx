@@ -3,7 +3,7 @@ import GuaranteeList from "./guarantee-list";
 
 const Guarantees = () => {
   return (
-    <section className="guarantees">
+    <section className="guarantees" id="guarantees">
       <Container className="grid grid-cols-FOUR">
         <div className="px-6 py-8">
           <p className="text-H3 font-bold">

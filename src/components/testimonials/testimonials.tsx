@@ -4,7 +4,7 @@ import TestimonialColon from "./testimonial-colon";
 
 const Testimonials = () => {
   return (
-    <section className="testimonials">
+    <section className="testimonials" id="testimonials">
       <SectionContainer>
         <SectionTitle>What others say about us</SectionTitle>
         <div className="relative max-h-[1413px] h-full">

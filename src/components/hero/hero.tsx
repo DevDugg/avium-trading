@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="hero">
+    <section className="hero" id="hero">
       <Container className="flex gap-20">
         <div className="flex flex-col gap-[124px] w-full">
           <Header />

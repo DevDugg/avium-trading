@@ -4,7 +4,7 @@ import SectionTitle from "../structure/section-title";
 
 const Contact = () => {
   return (
-    <section className="contact">
+    <section className="contact" id="contact">
       <SectionContainer>
         <SectionTitle>Contact us</SectionTitle>
         <ContactForm />
