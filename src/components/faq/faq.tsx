@@ -7,7 +7,9 @@ const FAQ = () => {
     <section className="faq" id="faq">
       <SectionContainer>
         <SectionTitle>Have any question?</SectionTitle>
-        <FAQList />
+        <div className="flex justify-center">
+          <FAQList />
+        </div>
       </SectionContainer>
     </section>
   );
