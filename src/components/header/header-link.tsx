@@ -1,9 +1,11 @@
 "use client";
 
+import { useRef, useState } from "react";
+
 import Link from "next/link";
 import headerVariants from "@/variants/header.variants";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useScrollToTarget } from "@/lib/use-scroll-to-target";
 
 interface HeaderLinkProps {
   title: string;
@@ -12,6 +14,8 @@ interface HeaderLinkProps {
 
 const HeaderLink = ({ title, href }: HeaderLinkProps) => {
   const [hovered, setHovered] = useState(false);
+  // const ref = useRef(null);
+  const { handleOnClick } = useScrollToTarget(href);
   return (
     <motion.div
       onMouseOver={() => setHovered(true)}
@@ -21,7 +25,7 @@ const HeaderLink = ({ title, href }: HeaderLinkProps) => {
       initial={"blockInitial"}
       animate={hovered ? "blockHover" : "blockInitial"}
     >
-      <Link href={href} className="py-3">
+      <Link href={href} className="py-3" onClick={handleOnClick}>
         {title}
       </Link>
       <motion.div
