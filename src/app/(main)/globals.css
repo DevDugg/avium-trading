@@ -9,3 +9,17 @@
 .gradient-shift {
   background-size: 200% 100%;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #040104;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1d1d1d;
+
+  border-radius: 8px;
+}

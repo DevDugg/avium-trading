@@ -5,6 +5,8 @@ import type { Metadata, Viewport } from "next";
 import ConfigProvider from "@/components/config-provider";
 import Footer from "@/components/footer/footer";
 import { Inter } from "next/font/google";
+import Loader from "@/components/loader";
+import ScrollProgress from "@/components/scroll-progress";
 import SmoothScroll from "@/components/smooth-scroll";
 import config from "@/config";
 import { getSEOTags } from "@/lib/seo";
@@ -36,10 +38,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${bdo.className} bg-BACKGROUND text-WHITE`}>
+        <Loader />
         <SmoothScroll>
           <ConfigProvider>
-            {children}
-            <Footer />
+            <ScrollProgress>
+              {children}
+              <Footer />
+            </ScrollProgress>
           </ConfigProvider>
         </SmoothScroll>
       </body>
