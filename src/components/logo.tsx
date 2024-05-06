@@ -7,7 +7,7 @@ interface LogoProps {
 const Logo = ({ size }: LogoProps) => {
   return (
     <div className="logo rounded-[10px] w-12 h-12 overflow-hidden" style={size ? { width: size, height: size } : {}}>
-      <Image alt="Logo" priority loading="eager" src={"/images/logo.png"} width={size || 48} height={size || 48} />
+      <Image alt="Logo" priority loading="eager" src={"/images/logo.svg"} width={size || 48} height={size || 48} />
     </div>
   );
 };
