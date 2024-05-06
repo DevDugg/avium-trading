@@ -20,7 +20,7 @@ const Loader = ({ children }: PropsWithChildren) => {
           delay: 1,
         }}
       >
-        <Logo eager size={80} />
+        <Logo size={80} />
         <Image alt="avium" src="/images/avium.svg" width={140} height={80} loading="eager" />
       </motion.div>
       {children}
