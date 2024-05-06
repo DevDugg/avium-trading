@@ -2,6 +2,7 @@ import CTALink from "../cta-link";
 import Feature from "./feature";
 import PricingCard from "./pricing-card";
 import SectionContainer from "../structure/section-container";
+import SectionTitle from "../structure/section-title";
 
 const pricingCards = [
   {
@@ -46,7 +47,7 @@ const Pricing = () => {
   return (
     <section className="pricing" id="pricing">
       <SectionContainer>
-        <h3 className="text-H3 font-bold">Pricing</h3>
+        <SectionTitle>Pricing</SectionTitle>
         <div className="flex flex-col gap-2">
           <div className="grid grid-cols-THREE gap-2">
             {pricingCards.map((card, index) => (
