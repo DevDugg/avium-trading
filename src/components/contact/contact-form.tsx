@@ -20,7 +20,7 @@ export type ValidFieldNames = "email" | "discord" | "experience" | "budget";
 
 const ContactForm = () => {
   const formSchema: ZodType<FormData> = z.object({
-    email: z.string().email({ message: "Please enter a valid email" }),
+    email: z.string().email({ message: "Please enter a valid email" }).or(z.literal("")),
     discord: z
       .string()
       .min(2, { message: "Please enter a valid Discord username" })
@@ -50,7 +50,6 @@ const ContactForm = () => {
           name="discord"
         />
         <FormField
-          required
           label="Your email"
           type="email"
           placeholder="johndoe@gmail.com"

@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        BACKGROUND: "#040104",
+        BACKGROUND: "#0A0B0F",
         BLACK: "#1E1D1C",
         WHITE: "#FDFAFE",
         LIGHTBLACK: "#1D1D1D",
@@ -25,7 +25,7 @@ const config: Config = {
         STROKE_GRADIENT: "linear-gradient(116.65deg, #FFFFFF 0%, rgba(204, 200, 255, 0.5) 53%, #CCC8FF 100%)",
         STROKE_GRADIENT_SHIFT:
           "linear-gradient(116.65deg, #FFFFFF 0%, rgba(204, 200, 255, 0.5) 53%, #CCC8FF 100%), linear-gradient(116.65deg, #CCC8FF 100%, rgba(204, 200, 255, 0.5) 53%, #FFFFFF 0%)",
-        TESTIMONIALS: "linear-gradient(180deg, #040104 0%, rgba(4, 1, 4, 0) 50%, #040104 100%);",
+        TESTIMONIALS: "linear-gradient(180deg, #0A0B0F 0%, rgba(4, 1, 4, 0) 50%, #0A0B0F 100%);",
       },
       fontSize: {
         CARD_TITLE: "80px",
