@@ -6,6 +6,7 @@ import ConfigProvider from "@/components/config-provider";
 import Footer from "@/components/footer/footer";
 import { Inter } from "next/font/google";
 import Loader from "@/components/loader";
+import Script from "next/script";
 import ScrollProgress from "@/components/scroll-progress";
 import SmoothScroll from "@/components/smooth-scroll";
 import config from "@/config";
@@ -48,6 +49,10 @@ export default function RootLayout({
           </ConfigProvider>
         </SmoothScroll>
       </body>
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-X7QFWWYQDJ" />
+      <Script id="google-analytics">
+        {`window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-X7QFWWYQDJ');`}
+      </Script>
     </html>
   );
 }
