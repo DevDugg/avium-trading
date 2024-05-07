@@ -1,6 +1,8 @@
+import AnimateInView from "../animate-in-view";
 import Benefit from "./benefit";
 import SectionContainer from "../structure/section-container";
 import SectionTitle from "../structure/section-title";
+import { defaultScrollVariants } from "@/variants/default-scroll.variants";
 
 const benefits = [
   {
@@ -25,10 +27,14 @@ const Benefits = () => {
   return (
     <section className="benefits" id="benefits">
       <SectionContainer>
-        <SectionTitle>What you will get at Avium</SectionTitle>
+        <AnimateInView {...defaultScrollVariants}>
+          <SectionTitle>What you will get at Avium</SectionTitle>
+        </AnimateInView>
         <div className="grid grid-cols-THREE gap-2">
           {benefits.map((benefit, i) => (
-            <Benefit key={i} {...benefit} />
+            <AnimateInView key={i} {...defaultScrollVariants} transition={{ delay: 0.2 + 0.2 * i }} height="100%">
+              <Benefit {...benefit} />
+            </AnimateInView>
           ))}
         </div>
       </SectionContainer>

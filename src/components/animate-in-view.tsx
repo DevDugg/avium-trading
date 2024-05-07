@@ -10,9 +10,10 @@ interface Props extends PropsWithChildren {
   inViewVariant: VariantLabels | TargetAndTransition | undefined;
   threshold?: number;
   transition?: AnimationProps["transition"];
+  height?: string;
 }
 
-const AnimateInView = ({ children, inViewVariant, initialVariant, threshold = 0.1, transition }: Props) => {
+const AnimateInView = ({ children, inViewVariant, initialVariant, threshold = 0.1, transition, height }: Props) => {
   const { ref, inView } = useInView({
     threshold: threshold,
     triggerOnce: true,
@@ -29,6 +30,7 @@ const AnimateInView = ({ children, inViewVariant, initialVariant, threshold = 0.
         stiffness: 210,
         ...transition,
       }}
+      style={{ height }}
     >
       {children}
     </motion.div>

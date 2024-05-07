@@ -2,6 +2,7 @@
 
 import AnimateInView from "../animate-in-view";
 import Guarantee from "./guarantee";
+import { defaultScrollVariants } from "@/variants/default-scroll.variants";
 import { useState } from "react";
 
 const guarantees = [
@@ -24,13 +25,7 @@ const GuaranteeList = () => {
   return (
     <>
       {guarantees.map((guarantee, index) => (
-        <AnimateInView
-          key={index}
-          initialVariant={{ y: "10%", opacity: 0 }}
-          inViewVariant={{ y: "0%", opacity: 1 }}
-          transition={{ delay: 0.2 + 0.2 * index }}
-          threshold={0.4}
-        >
+        <AnimateInView key={index} {...defaultScrollVariants} transition={{ delay: 0.2 + 0.2 * index }}>
           <div onMouseOver={() => setHoveredNumber(index)} onMouseLeave={() => setHoveredNumber(null)}>
             <Guarantee {...guarantee} position={index} hoveredNumber={hoveredNumber} />
           </div>
