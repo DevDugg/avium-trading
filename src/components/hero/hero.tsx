@@ -7,23 +7,42 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <section className="hero" id="hero">
-      <Container className="flex gap-20">
+      <Container className="flex gap-20 max-lg:flex-col max-lg:items-center max-lg:gap-16 max-md:gap-12">
         <div className="flex flex-col gap-[124px] w-full">
-          <Header />
-          <div className="flex flex-col justify-between h-full">
-            <div className="flex flex-col gap-6">
-              <h1 className="text-H1 leading-H1 font-medium">Learn to Trade Like a Pro</h1>
-              <p className="text-GRAY text-lg">
+          <div className="max-[1260px]:hidden">
+            <Header />
+          </div>
+          <div className="flex flex-col gap-12 justify-between h-full">
+            <div className="flex flex-col gap-6 max-lg:items-center max-lg:gap-4">
+              <h1 className="text-H1 leading-H1 font-medium max-lg:text-center max-lg:text-[64px] max-md:text-[48px]">
+                Learn to Trade Like a Pro
+              </h1>
+              <p className="text-GRAY text-lg max-lg:text-center max-lg:max-w-[70%] max-md:text-base max-md:max-w-[80%] max-sm:max-w-none">
                 Unlock your Trading Potential with Personalized Mentorship and High-Quality Resources
               </p>
-              <div className="pt-6">
+              <div className="pt-6 max-lg:flex max-lg:justify-center max-lg:pt-2">
                 <CTALink title={"Get started"} href="#pricing" />
               </div>
             </div>
             <HeroTestimonials />
           </div>
         </div>
-        <Image src={"/images/hero.png"} alt="Hero" priority width={624} height={700} className="rounded-3xl" />
+        <Image
+          src={"/images/hero.png"}
+          alt="Hero"
+          priority
+          width={624}
+          height={700}
+          className="rounded-3xl max-w-[624px] object-cover w-full max-lg:hidden"
+        />
+        <Image
+          src={"/images/hero-mobile.png"}
+          alt="Hero"
+          priority
+          width={992}
+          height={480}
+          className="rounded-3xl hidden max-lg:block"
+        />
       </Container>
     </section>
   );

@@ -17,10 +17,13 @@ const HeroTestimonial = ({ rating, text }: HeroTestimonialProps) => {
             alt="Star"
             width={16}
             height={16}
+            className="size-4 max-[400px]:size-[14px]"
           />
         ))}
       </div>
-      <p className="text-lg text-GRAY">{text}</p>
+      <p className="text-lg text-GRAY text-center max-md:text-base max-sm:leading-none max-[400px]:text-[14px]">
+        {text}
+      </p>
     </div>
   );
 };
