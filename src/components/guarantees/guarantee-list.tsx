@@ -1,5 +1,6 @@
 "use client";
 
+import AnimateInView from "../animate-in-view";
 import Guarantee from "./guarantee";
 import { useState } from "react";
 
@@ -23,9 +24,17 @@ const GuaranteeList = () => {
   return (
     <>
       {guarantees.map((guarantee, index) => (
-        <div key={index} onMouseOver={() => setHoveredNumber(index)} onMouseLeave={() => setHoveredNumber(null)}>
-          <Guarantee {...guarantee} position={index} hoveredNumber={hoveredNumber} />
-        </div>
+        <AnimateInView
+          key={index}
+          initialVariant={{ y: "10%", opacity: 0 }}
+          inViewVariant={{ y: "0%", opacity: 1 }}
+          transition={{ delay: 0.2 + 0.2 * index }}
+          threshold={0.4}
+        >
+          <div onMouseOver={() => setHoveredNumber(index)} onMouseLeave={() => setHoveredNumber(null)}>
+            <Guarantee {...guarantee} position={index} hoveredNumber={hoveredNumber} />
+          </div>
+        </AnimateInView>
       ))}
     </>
   );
