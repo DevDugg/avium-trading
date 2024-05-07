@@ -1,8 +1,10 @@
+import AnimateInView from "../animate-in-view";
 import CTALink from "../cta-link";
 import Feature from "./feature";
 import PricingCard from "./pricing-card";
 import SectionContainer from "../structure/section-container";
 import SectionTitle from "../structure/section-title";
+import { defaultScrollVariants } from "@/variants/default-scroll.variants";
 
 const pricingCards = [
   {
@@ -47,30 +49,36 @@ const Pricing = () => {
   return (
     <section className="pricing" id="pricing">
       <SectionContainer>
-        <SectionTitle>Pricing</SectionTitle>
+        <AnimateInView {...defaultScrollVariants}>
+          <SectionTitle>Pricing</SectionTitle>
+        </AnimateInView>
         <div className="flex flex-col gap-2">
           <div className="grid grid-cols-THREE gap-2">
             {pricingCards.map((card, index) => (
-              <PricingCard key={index} {...card} />
+              <AnimateInView key={index} {...defaultScrollVariants} transition={{ delay: 0.2 + 0.2 * index }}>
+                <PricingCard {...card} />
+              </AnimateInView>
             ))}
           </div>
-          <div className="pricing-card-big px-6 py-10 rounded-3xl bg-LIGHTBLACK grid grid-cols-TWO">
-            <div className="flex flex-col gap-10 justify-between">
-              <div className="flex flex-col gap-6">
-                <h2 className="text-H2 font-bold">{pricingCardBig.title}</h2>
-                <p className="text-GRAY text-lg">{pricingCardBig.subtitle}</p>
+          <AnimateInView {...defaultScrollVariants}>
+            <div className="pricing-card-big px-6 py-10 rounded-3xl bg-LIGHTBLACK grid grid-cols-TWO">
+              <div className="flex flex-col gap-10 justify-between">
+                <div className="flex flex-col gap-6">
+                  <h2 className="text-H2 font-bold">{pricingCardBig.title}</h2>
+                  <p className="text-GRAY text-lg">{pricingCardBig.subtitle}</p>
+                </div>
+                <CTALink href="#" title="Book a call" width="380px" />
               </div>
-              <CTALink href="#" title="Book a call" width="380px" />
-            </div>
-            <div className="flex flex-col gap-4">
-              <span className="font-medium text-2xl">Features</span>
               <div className="flex flex-col gap-4">
-                {pricingCardBig.features.map((feature, index) => (
-                  <Feature key={index} title={feature} />
-                ))}
+                <span className="font-medium text-2xl">Features</span>
+                <div className="flex flex-col gap-4">
+                  {pricingCardBig.features.map((feature, index) => (
+                    <Feature key={index} title={feature} />
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
+          </AnimateInView>
         </div>
       </SectionContainer>
     </section>
