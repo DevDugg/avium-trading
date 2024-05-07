@@ -2,10 +2,12 @@
 
 import { ZodType, z } from "zod";
 
+import AnimateInView from "../animate-in-view";
 import CTALink from "../cta-link";
 import FormDropdown from "./form-dropdown";
 import FormField from "./form-field";
 import FormSubmit from "./form-submit";
+import { defaultScrollVariants } from "@/variants/default-scroll.variants";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 
@@ -40,48 +42,56 @@ const ContactForm = () => {
   return (
     <form className="contact-form flex flex-col items-center overflow-visible" onSubmit={handleSubmit(onSubmit)}>
       <div className="max-w-[800px] w-full flex flex-col gap-4 overflow-visible h-fit">
-        <FormField
-          required
-          label="Your discord"
-          type="text"
-          placeholder="johndoe3"
-          error={errors.discord}
-          register={register}
-          name="discord"
-        />
-        <FormField
-          label="Your email"
-          type="email"
-          placeholder="johndoe@gmail.com"
-          error={errors.email}
-          register={register}
-          name="email"
-        />
-        <div className="flex gap-2 w-full">
-          <FormDropdown
+        <AnimateInView {...defaultScrollVariants}>
+          <FormField
             required
-            label="Your experience"
+            label="Your discord"
             type="text"
-            placeholder="Select your experience"
-            error={errors.experience}
+            placeholder="johndoe3"
+            error={errors.discord}
             register={register}
-            name="experience"
-            items={["Beginner", "Intermediate", "Advanced"]}
+            name="discord"
           />
-          <FormDropdown
-            required
-            label="Your budget"
-            type="text"
-            placeholder="Select your budget"
-            error={errors.budget}
+        </AnimateInView>
+        <AnimateInView {...defaultScrollVariants}>
+          <FormField
+            label="Your email"
+            type="email"
+            placeholder="johndoe@gmail.com"
+            error={errors.email}
             register={register}
-            name="budget"
-            items={["$1000", "$5000", "$10000"]}
+            name="email"
           />
-        </div>
-        <div className="flex justify-center pt-6">
-          <FormSubmit title="Book a call" width="380px" />
-        </div>
+        </AnimateInView>
+        <AnimateInView {...defaultScrollVariants}>
+          <div className="flex gap-2 w-full">
+            <FormDropdown
+              required
+              label="Your experience"
+              type="text"
+              placeholder="Select your experience"
+              error={errors.experience}
+              register={register}
+              name="experience"
+              items={["Beginner", "Intermediate", "Advanced"]}
+            />
+            <FormDropdown
+              required
+              label="Your budget"
+              type="text"
+              placeholder="Select your budget"
+              error={errors.budget}
+              register={register}
+              name="budget"
+              items={["$1000", "$5000", "$10000"]}
+            />
+          </div>
+        </AnimateInView>
+        <AnimateInView {...defaultScrollVariants}>
+          <div className="flex justify-center pt-6">
+            <FormSubmit title="Book a call" width="380px" />
+          </div>
+        </AnimateInView>
       </div>
     </form>
   );
