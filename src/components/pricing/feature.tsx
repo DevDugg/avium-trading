@@ -7,7 +7,7 @@ interface FeatureProps {
 const Feature = ({ title }: FeatureProps) => {
   return (
     <div className="feature flex items-start gap-2">
-      <Image src="/images/feature.svg" alt="Check" width={20} height={20} />
+      <Image src="/images/feature.svg" alt="Check" width={20} height={20} className="mt-0.5" />
       <p className="text-lg leading-snug">{title}</p>
     </div>
   );
