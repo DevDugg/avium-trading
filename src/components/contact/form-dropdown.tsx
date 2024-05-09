@@ -70,7 +70,7 @@ const FormDropdown = ({
           ))}
         </motion.ul>
         <motion.div
-          className="absolute right-[14px] top-4 z-10"
+          className="absolute right-[14px] top-4 z-10 pointer-events-none"
           initial={{ rotate: "0deg" }}
           animate={{ rotate: isOpen ? "180deg" : "0deg" }}
         >
