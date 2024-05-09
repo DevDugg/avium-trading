@@ -3,15 +3,15 @@ import HeroTestimonial from "./hero-testimonial";
 const testimonials = [
   {
     rating: 5,
-    text: "Best trading mentorship",
+    text: "5+ Students",
   },
   {
     rating: 5,
-    text: "Transformed my trading",
+    text: "5+ Succesful Traders",
   },
   {
     rating: 5,
-    text: "Results-driven strategies",
+    text: "10/10 Rating",
   },
 ];
 

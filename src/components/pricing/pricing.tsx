@@ -32,8 +32,7 @@ const pricingCards = [
 const pricingCardBig = {
   title: "The Avium Mentorship",
   subtitle:
-    "Our mentors have years of experience trading and want to share what they've learned to help you become a successful trader. Whether you're new to trading or have been trying for a while but just can’t get it right, we're here to help you understand the market and create your own trading strategies.",
-  note: "Start trading better today!",
+    "Ready to trade smarter and win? Our seasoned mentors are ready to show you the ropes. Whether you're a beginner or struggling, in just 60 days we'll simplify the market for you and help you design your winning strategies.",
   features: [
     "18 Livestreams covering everything from core trading principles to advanced techniques for trading and investing.",
     "Five 1-on-1 sessions with one of our mentors",
@@ -77,6 +76,9 @@ const Pricing = () => {
           </div>
           <div className="flex flex-col gap-2">
             <h3 className="text-H3 font-bold">1 - on - 1</h3>
+            <p className="text-lg">
+              Looking for something more personalized without the commitment? Book a 1-on-1 call!
+            </p>
             <div className="grid grid-cols-THREE gap-2">
               {pricingCards.map((card, index) => (
                 <AnimateInView key={index} {...defaultScrollVariants} transition={{ delay: 0.2 + 0.2 * index }}>
