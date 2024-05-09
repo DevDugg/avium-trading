@@ -35,7 +35,7 @@ const Guarantee = ({ name, number, hoveredNumber, position }: GuaranteeProps) =>
   return (
     <motion.div
       ref={ref}
-      className="px-6 py-6 border-r border-WHITE relative cursor-default"
+      className="p-6 border-r border-WHITE relative cursor-default max-lg:p-4 max-sm:py-2 max-[500px]:px-3"
       style={position === 0 ? { borderLeft: `1px solid ${colors.WHITE}` } : {}}
       animate={{
         borderColor: hoveredNumber !== null ? `${colors.WHITE}00` : colors.WHITE,
@@ -50,9 +50,9 @@ const Guarantee = ({ name, number, hoveredNumber, position }: GuaranteeProps) =>
           opacity: hoveredNumber === position ? 1 : 0,
         }}
       ></motion.div>
-      <div className="flex flex-col items-center gap-10 w-fit">
-        <span className="text-[80px] w-fit">{latest}+</span>
-        <span className="text-lg w-fit">{name}</span>
+      <div className="flex flex-col items-start gap-10 w-fit max-sm:gap-6">
+        <span className="text-[80px] w-fit max-lg:text-[64px] max-sm:text-H2 max-[500px]:text-[40px]">{latest}+</span>
+        <span className="text-lg w-fit max-lg:text-base max-sm:text-xs">{name}</span>
       </div>
     </motion.div>
   );
