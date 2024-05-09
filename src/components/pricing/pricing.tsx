@@ -30,9 +30,9 @@ const pricingCards = [
 ];
 
 const pricingCardBig = {
-  title: "1 on 1 Mentorship",
+  title: "The Avium Mentorship",
   subtitle:
-    "Join our mentorship program, and in just 60 days, we'll teach you everything you need to trade on your own.",
+    "Our mentors have years of experience trading and want to share what they've learned to help you become a successful trader. Whether you're new to trading or have been trying for a while but just can’t get it right, we're here to help you understand the market and create your own trading strategies.",
   note: "Start trading better today!",
   features: [
     "18 Livestreams covering everything from core trading principles to advanced techniques for trading and investing.",
@@ -52,33 +52,39 @@ const Pricing = () => {
         <AnimateInView {...defaultScrollVariants}>
           <SectionTitle>Pricing</SectionTitle>
         </AnimateInView>
-        <div className="flex flex-col gap-2">
-          <div className="grid grid-cols-THREE gap-2">
-            {pricingCards.map((card, index) => (
-              <AnimateInView key={index} {...defaultScrollVariants} transition={{ delay: 0.2 + 0.2 * index }}>
-                <PricingCard {...card} />
-              </AnimateInView>
-            ))}
-          </div>
-          <AnimateInView {...defaultScrollVariants}>
-            <div className="pricing-card-big px-6 py-10 rounded-3xl bg-LIGHTBLACK grid grid-cols-TWO">
-              <div className="flex flex-col gap-10 justify-between">
-                <div className="flex flex-col gap-6">
-                  <h2 className="text-H2 font-bold">{pricingCardBig.title}</h2>
-                  <p className="text-GRAY text-lg">{pricingCardBig.subtitle}</p>
+        <div className="flex flex-col gap-12">
+          <div className="flex flex-col gap-6">
+            <h3 className="text-H3 font-bold">Trading mentorship</h3>
+            <AnimateInView {...defaultScrollVariants}>
+              <div className="pricing-card-big px-6 py-10 rounded-3xl bg-LIGHTBLACK grid grid-cols-TWO">
+                <div className="flex flex-col gap-10 justify-between">
+                  <div className="flex flex-col gap-6">
+                    <h2 className="text-H2 font-bold">{pricingCardBig.title}</h2>
+                    <p className="text-GRAY text-lg">{pricingCardBig.subtitle}</p>
+                  </div>
+                  <CTALink href="#" title="Book a call" width="380px" />
                 </div>
-                <CTALink href="#" title="Book a call" width="380px" />
-              </div>
-              <div className="flex flex-col gap-4">
-                <span className="font-medium text-2xl">Features</span>
                 <div className="flex flex-col gap-4">
-                  {pricingCardBig.features.map((feature, index) => (
-                    <Feature key={index} title={feature} />
-                  ))}
+                  <span className="font-medium text-2xl">Features</span>
+                  <div className="flex flex-col gap-4">
+                    {pricingCardBig.features.map((feature, index) => (
+                      <Feature key={index} title={feature} />
+                    ))}
+                  </div>
                 </div>
               </div>
+            </AnimateInView>
+          </div>
+          <div className="flex flex-col gap-2">
+            <h3 className="text-H3 font-bold">1 - on - 1</h3>
+            <div className="grid grid-cols-THREE gap-2">
+              {pricingCards.map((card, index) => (
+                <AnimateInView key={index} {...defaultScrollVariants} transition={{ delay: 0.2 + 0.2 * index }}>
+                  <PricingCard {...card} />
+                </AnimateInView>
+              ))}
             </div>
-          </AnimateInView>
+          </div>
         </div>
       </SectionContainer>
     </section>
