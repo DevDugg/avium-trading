@@ -76,9 +76,6 @@ const Pricing = () => {
           </div>
           <div className="flex flex-col gap-2">
             <h3 className="text-H3 font-bold">1 - on - 1</h3>
-            <p className="text-lg">
-              Looking for something more personalized without the commitment? Book a 1-on-1 call!
-            </p>
             <div className="grid grid-cols-THREE gap-2">
               {pricingCards.map((card, index) => (
                 <AnimateInView key={index} {...defaultScrollVariants} transition={{ delay: 0.2 + 0.2 * index }}>
