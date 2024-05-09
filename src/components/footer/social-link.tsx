@@ -28,7 +28,7 @@ const SocialLink = ({ href, Icon, name }: SocialLinkProps) => {
       target="_blank"
     >
       <div className="flex gap-2">
-        <div className="rounded-3xl overflow-hidden">
+        <div className="rounded-full overflow-hidden">
           <Icon isHovered={hovered} size="24" />
         </div>
         <motion.span className="text-lg">{name}</motion.span>
