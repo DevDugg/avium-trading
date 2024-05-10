@@ -31,7 +31,7 @@ const SocialLink = ({ href, Icon, name }: SocialLinkProps) => {
         <div className="rounded-full overflow-hidden">
           <Icon isHovered={hovered} size="24" />
         </div>
-        <motion.span className="text-lg">{name}</motion.span>
+        {/* <motion.span className="text-lg">{name}</motion.span> */}
       </div>
       <motion.div
         className="absolute top-[110%] border-b border-GRAY w-full"
