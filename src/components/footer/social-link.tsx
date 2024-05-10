@@ -20,9 +20,9 @@ const SocialLink = ({ href, Icon, name }: SocialLinkProps) => {
       onMouseOver={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       className="w-fit relative"
-      variants={headerVariants}
-      initial={"blockInitial"}
-      animate={hovered ? "blockHover" : "blockInitial"}
+      // variants={headerVariants}
+      // initial={"blockInitial"}
+      // animate={hovered ? "blockHover" : "blockInitial"}
       href={href}
       rel="noopener noreferrer"
       target="_blank"
@@ -33,12 +33,12 @@ const SocialLink = ({ href, Icon, name }: SocialLinkProps) => {
         </div>
         {/* <motion.span className="text-lg">{name}</motion.span> */}
       </div>
-      <motion.div
+      {/* <motion.div
         className="absolute top-[110%] border-b border-GRAY w-full"
         variants={headerVariants}
         initial={"childInitial"}
         animate={hovered ? "childHover" : "childInitial"}
-      ></motion.div>
+      ></motion.div> */}
     </motion.a>
   );
 };
