@@ -7,16 +7,19 @@ import { useState } from "react";
 
 const guarantees = [
   {
-    number: 42,
-    name: "Micro lessons",
+    number: 5,
+    name: "Students",
+    description: "More than 5 students have gone through our mentorship programs.",
   },
   {
-    number: 36,
-    name: "Workshops",
+    number: 5,
+    name: "Succesful Traders",
+    description: "Out of the 5 students we've taught 5 are now making money trading",
   },
   {
-    number: 12,
+    number: "10/10",
     name: "Challenges",
+    description: "When asking all our students we got an average rating of 10/10",
   },
 ];
 

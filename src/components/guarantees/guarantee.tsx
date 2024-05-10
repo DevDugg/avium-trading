@@ -7,13 +7,14 @@ import { useInView } from "react-intersection-observer";
 import { useState } from "react";
 
 interface GuaranteeProps {
-  number: number;
+  number: number | string;
   name: string;
+  description: string;
   position: number;
   hoveredNumber: number | null;
 }
 
-const Guarantee = ({ name, number, hoveredNumber, position }: GuaranteeProps) => {
+const Guarantee = ({ name, number, hoveredNumber, position, description }: GuaranteeProps) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.3,
@@ -22,8 +23,8 @@ const Guarantee = ({ name, number, hoveredNumber, position }: GuaranteeProps) =>
   const [latest, setLatest] = useState(0);
 
   useIsomorphicLayoutEffect(() => {
-    if (!inView) return;
-    animate(latest, Number(number), {
+    if (!inView || typeof number === "string") return;
+    animate(latest, number, {
       onUpdate: (newLatest) => setLatest(Math.ceil(newLatest)),
       duration: 3,
       ease: "circOut",
@@ -42,18 +43,30 @@ const Guarantee = ({ name, number, hoveredNumber, position }: GuaranteeProps) =>
       }}
     >
       <motion.div
-        className="absolute top-0 left-0 w-full h-full bg-GRADIENT -z-10 pointer-events-none"
+        className="absolute top-0 left-0 w-full h-full bg-GRADIENT -z-10 flex items-center justify-center pointer-events-none p-6 max-lg:p-4 max-sm:py-2 max-[500px]:px-3"
         initial={{
           opacity: 0,
         }}
         animate={{
           opacity: hoveredNumber === position ? 1 : 0,
         }}
-      ></motion.div>
-      <div className="flex flex-col items-start gap-10 w-fit max-sm:gap-6">
-        <span className="text-[80px] w-fit max-lg:text-[64px] max-sm:text-H2 max-[500px]:text-[40px]">{latest}+</span>
+      >
+        <span className="text-2xl w-fit font-bold max-lg:text-base max-sm:text-xs">{description}</span>
+      </motion.div>
+      <motion.div
+        className="flex flex-col items-start gap-10 w-fit max-sm:gap-6"
+        initial={{
+          opacity: 1,
+        }}
+        animate={{
+          opacity: hoveredNumber === position ? 0 : 1,
+        }}
+      >
+        <span className="text-[80px] w-fit max-lg:text-[64px] max-sm:text-H2 max-[500px]:text-[40px]">
+          {typeof number === "string" ? number : `${latest}+`}
+        </span>
         <span className="text-lg w-fit max-lg:text-base max-sm:text-xs">{name}</span>
-      </div>
+      </motion.div>
     </motion.div>
   );
 };
