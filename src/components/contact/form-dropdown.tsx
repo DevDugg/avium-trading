@@ -13,6 +13,7 @@ interface FormDropdownProps extends FormFieldProps {
 }
 
 const FormDropdown = ({
+  note,
   error,
   items,
   name,
@@ -32,7 +33,14 @@ const FormDropdown = ({
     <div className="form-dropdown flex flex-col gap-2 w-full" onClick={() => setIsOpen(!isOpen)} ref={dropdownRef}>
       {label && (
         <label htmlFor={name} className="text-lg">
-          {label} {required ? <span className="text-RED">*</span> : ""}
+          {label} {required ? <span className="text-RED">*</span> : ""}{" "}
+          {note ? (
+            <span className="text-ACCENT" title={note.text}>
+              ({note.title})
+            </span>
+          ) : (
+            ""
+          )}
         </label>
       )}
       <div className="relative w-full">

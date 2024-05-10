@@ -15,10 +15,10 @@ export interface FormData {
   email: string;
   discord: string;
   experience: string;
-  budget: string;
+  risk_capital: string;
 }
 
-export type ValidFieldNames = "email" | "discord" | "experience" | "budget";
+export type ValidFieldNames = "email" | "discord" | "experience" | "risk_capital";
 
 const ContactForm = () => {
   const formSchema: ZodType<FormData> = z.object({
@@ -28,7 +28,7 @@ const ContactForm = () => {
       .min(2, { message: "Please enter a valid Discord username" })
       .max(32, { message: "Please enter a valid Discord username" }),
     experience: z.string().min(1, { message: "Experience is required" }),
-    budget: z.string().min(1, { message: "Budget is required" }),
+    risk_capital: z.string().min(1, { message: "risk_capital is required" }),
   });
 
   const {
@@ -77,12 +77,16 @@ const ContactForm = () => {
             />
             <FormDropdown
               required
-              label="Your budget"
+              label="Risk capital"
+              note={{
+                text: "Risk capital refers to funds used for speculation and investments. Risk capital is by definition money you can afford to lose, as such, any funds you might need to pay the bills do not count towards it and should not be used for investments.",
+                title: "?",
+              }}
               type="text"
-              placeholder="Select your budget"
-              error={errors.budget}
+              placeholder="Select your risk capital"
+              error={errors.risk_capital}
               register={register}
-              name="budget"
+              name="risk_capital"
               items={["$1000", "$5000", "$10000"]}
             />
           </div>

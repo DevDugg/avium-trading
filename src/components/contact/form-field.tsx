@@ -10,6 +10,10 @@ import colors from "@/colors";
 export interface FormFieldProps {
   required?: boolean;
   label?: string;
+  note?: {
+    text: string;
+    title: string;
+  };
   type: string;
   placeholder: string;
   name: ValidFieldNames;
@@ -18,12 +22,29 @@ export interface FormFieldProps {
   valueAsNumber?: boolean;
 }
 
-const FormField = ({ required, label, type, placeholder, name, register, error, valueAsNumber }: FormFieldProps) => {
+const FormField = ({
+  required,
+  label,
+  type,
+  placeholder,
+  name,
+  register,
+  error,
+  valueAsNumber,
+  note,
+}: FormFieldProps) => {
   return (
     <div className="form-field flex flex-col gap-2">
       {label && (
         <label htmlFor={name} className="text-lg">
-          {label} {required ? <span className="text-RED">*</span> : ""}
+          {label} {required ? <span className="text-RED">*</span> : ""}{" "}
+          {note ? (
+            <span className="text-ACCENT" title={note.text}>
+              ({note.title})
+            </span>
+          ) : (
+            ""
+          )}
         </label>
       )}
       <motion.input
