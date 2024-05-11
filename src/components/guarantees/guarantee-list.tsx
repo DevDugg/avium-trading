@@ -28,8 +28,12 @@ const GuaranteeList = () => {
   return (
     <>
       {guarantees.map((guarantee, index) => (
-        <AnimateInView key={index} {...defaultScrollVariants} transition={{ delay: 0.2 + 0.2 * index }}>
-          <div onMouseOver={() => setHoveredNumber(index)} onMouseLeave={() => setHoveredNumber(null)}>
+        <AnimateInView key={index} {...defaultScrollVariants} transition={{ delay: 0.2 + 0.2 * index }} height="100%">
+          <div
+            onMouseOver={() => setHoveredNumber(index)}
+            onMouseLeave={() => setHoveredNumber(null)}
+            className="h-full"
+          >
             <Guarantee {...guarantee} position={index} hoveredNumber={hoveredNumber} />
           </div>
         </AnimateInView>
