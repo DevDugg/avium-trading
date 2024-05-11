@@ -64,8 +64,8 @@ const Pricing = () => {
                   <CTALink
                     href="#"
                     title="Book a call"
-                    width="380px"
-                    breakpoint={{ value: 1024, width: "100%" }}
+                    width="100%"
+                    // breakpoint={{ value: 1024, width: "100%" }}
                     extendedPaddingOnMobile
                   />
                 </div>

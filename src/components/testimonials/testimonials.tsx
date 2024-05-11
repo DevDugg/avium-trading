@@ -16,8 +16,12 @@ const Testimonials = () => {
             <div className="absolute top-0 left-0 w-full h-full bg-TESTIMONIALS pointer-events-none z-10"></div>
             <div className="flex gap-4">
               <TestimonialColon direction="up" />
-              <TestimonialColon direction="down" />
-              <TestimonialColon direction="up" />
+              <div className="max-md:hidden">
+                <TestimonialColon direction="down" />
+              </div>
+              <div className="max-lg:hidden">
+                <TestimonialColon direction="up" />
+              </div>
             </div>
           </div>
         </AnimateInView>
