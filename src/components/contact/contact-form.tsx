@@ -3,7 +3,6 @@
 import { ZodType, z } from "zod";
 
 import AnimateInView from "../animate-in-view";
-import CTALink from "../cta-link";
 import FormDropdown from "./form-dropdown";
 import FormField from "./form-field";
 import FormSubmit from "./form-submit";
@@ -12,21 +11,24 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 
 export interface FormData {
-  email: string;
-  discord: string;
+  email_or_discord: string;
   experience: string;
   risk_capital: string;
 }
 
-export type ValidFieldNames = "email" | "discord" | "experience" | "risk_capital";
+export type ValidFieldNames = "email_or_discord" | "experience" | "risk_capital";
 
 const ContactForm = () => {
   const formSchema: ZodType<FormData> = z.object({
-    email: z.string().email({ message: "Please enter a valid email" }).or(z.literal("")),
-    discord: z
+    email_or_discord: z
       .string()
-      .min(2, { message: "Please enter a valid Discord username" })
-      .max(32, { message: "Please enter a valid Discord username" }),
+      .email({ message: "Please enter a valid email" })
+      .or(
+        z
+          .string()
+          .min(2, { message: "Please enter a valid Discord username or email" })
+          .max(32, { message: "Please enter a valid Discord username or email" }),
+      ),
     experience: z.string().min(1, { message: "Experience is required" }),
     risk_capital: z.string().min(1, { message: "risk_capital is required" }),
   });
@@ -44,52 +46,41 @@ const ContactForm = () => {
       <div className="max-w-[800px] w-full flex flex-col gap-4 overflow-visible h-fit">
         <AnimateInView {...defaultScrollVariants}>
           <FormField
-            required
-            label="Your discord"
+            label="Your Discord username or Email"
             type="text"
-            placeholder="johndoe3"
-            error={errors.discord}
+            placeholder="johndoe#1234 / johndoe@gmail.com"
+            error={errors.email_or_discord}
             register={register}
-            name="discord"
+            name="email_or_discord"
+          />
+        </AnimateInView>
+        <AnimateInView {...defaultScrollVariants}>
+          <FormDropdown
+            required
+            label="Risk capital"
+            note={{
+              text: "Risk capital refers to funds used for speculation and investments. Risk capital is by definition money you can afford to lose, as such, any funds you might need to pay the bills do not count towards it and should not be used for investments.",
+              title: "?",
+            }}
+            type="text"
+            placeholder="Select your risk capital"
+            error={errors.risk_capital}
+            register={register}
+            name="risk_capital"
+            items={["$1000", "$5000", "$10000"]}
           />
         </AnimateInView>
         <AnimateInView {...defaultScrollVariants}>
           <FormField
-            label="Your email"
-            type="email"
-            placeholder="johndoe@gmail.com"
-            error={errors.email}
+            required
+            label="Your experience"
+            type="text"
+            placeholder="Please share your experience in the market and how Avium might help you"
+            error={errors.experience}
             register={register}
-            name="email"
+            name="experience"
+            isTextarea
           />
-        </AnimateInView>
-        <AnimateInView {...defaultScrollVariants}>
-          <div className="flex gap-2 w-full">
-            <FormDropdown
-              required
-              label="Your experience"
-              type="text"
-              placeholder="Select your experience"
-              error={errors.experience}
-              register={register}
-              name="experience"
-              items={["Beginner", "Intermediate", "Advanced"]}
-            />
-            <FormDropdown
-              required
-              label="Risk capital"
-              note={{
-                text: "Risk capital refers to funds used for speculation and investments. Risk capital is by definition money you can afford to lose, as such, any funds you might need to pay the bills do not count towards it and should not be used for investments.",
-                title: "?",
-              }}
-              type="text"
-              placeholder="Select your risk capital"
-              error={errors.risk_capital}
-              register={register}
-              name="risk_capital"
-              items={["$1000", "$5000", "$10000"]}
-            />
-          </div>
         </AnimateInView>
         <AnimateInView {...defaultScrollVariants}>
           <div className="flex justify-center pt-6">

@@ -20,6 +20,7 @@ export interface FormFieldProps {
   register: UseFormRegister<FormData>;
   error: FieldError | undefined;
   valueAsNumber?: boolean;
+  isTextarea?: boolean;
 }
 
 const FormField = ({
@@ -32,6 +33,7 @@ const FormField = ({
   error,
   valueAsNumber,
   note,
+  isTextarea,
 }: FormFieldProps) => {
   return (
     <div className="form-field flex flex-col gap-2">
@@ -47,15 +49,27 @@ const FormField = ({
           )}
         </label>
       )}
-      <motion.input
-        type={type}
-        id={name}
-        placeholder={placeholder}
-        {...register(name, { valueAsNumber })}
-        className="rounded-lg px-[14px] py-4 text-BASE bg-LIGHTBLACK border border-GRAY placeholder:text-GRAY outline-none"
-        animate={error ? { borderColor: colors.RED } : { borderColor: colors.GRAY }}
-        whileFocus={{ borderColor: colors.ACCENT }}
-      />
+      {isTextarea ? (
+        <motion.textarea
+          id={name}
+          rows={5}
+          placeholder={placeholder}
+          {...register(name, { valueAsNumber })}
+          className="rounded-lg px-[14px] py-4 text-BASE bg-LIGHTBLACK border border-GRAY placeholder:text-GRAY outline-none resize-none w-full"
+          animate={error ? { borderColor: colors.RED } : { borderColor: colors.GRAY }}
+          whileFocus={{ borderColor: colors.ACCENT }}
+        />
+      ) : (
+        <motion.input
+          type={type}
+          id={name}
+          placeholder={placeholder}
+          {...register(name, { valueAsNumber })}
+          className="rounded-lg px-[14px] py-4 text-BASE bg-LIGHTBLACK border border-GRAY placeholder:text-GRAY outline-none"
+          animate={error ? { borderColor: colors.RED } : { borderColor: colors.GRAY }}
+          whileFocus={{ borderColor: colors.ACCENT }}
+        />
+      )}
       {error && <span className="error-message text-RED text-BASE">{error.message}</span>}
     </div>
   );
