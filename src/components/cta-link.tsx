@@ -8,12 +8,15 @@ interface CTALinkProps {
   title: string;
   href: string;
   width?: string;
+  fullWidthOnMobile?: boolean;
 }
 
-const CTALink = ({ title, href, width }: CTALinkProps) => {
+const CTALink = ({ title, href, width, fullWidthOnMobile }: CTALinkProps) => {
   return (
     <motion.div
-      className="gradient-shift flex items-center justify-center w-fit p-[1px] bg-STROKE_GRADIENT_SHIFT rounded-[100px]"
+      className={`gradient-shift flex items-center justify-center w-fit p-[1px] bg-STROKE_GRADIENT_SHIFT rounded-[100px] ${
+        fullWidthOnMobile ? "max-[500px]:w-full" : ""
+      }`}
       style={{ width }}
       variants={variants}
       initial={"initial"}
@@ -26,7 +29,7 @@ const CTALink = ({ title, href, width }: CTALinkProps) => {
           initial={"initial"}
           whileHover={"hover"}
         >
-          <span className="font-medium text-lg w-fit h-fit">{title}</span>
+          <span className="font-medium text-lg w-fit h-fit max-md:text-xl">{title}</span>
         </motion.div>
       </Link>
     </motion.div>
