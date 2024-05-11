@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { useMediaQuery } from "usehooks-ts";
 import variants from "@/variants/cta.variants";
 
 interface CTALinkProps {
@@ -9,15 +10,20 @@ interface CTALinkProps {
   href: string;
   width?: string;
   fullWidthOnMobile?: boolean;
+  breakpoint?: {
+    value: number;
+    width: string;
+  };
 }
 
-const CTALink = ({ title, href, width, fullWidthOnMobile }: CTALinkProps) => {
+const CTALink = ({ title, href, width, fullWidthOnMobile, breakpoint }: CTALinkProps) => {
+  const isBreakpoint = useMediaQuery(`(max-width: ${breakpoint?.value || 0}px)`);
   return (
     <motion.div
       className={`gradient-shift flex items-center justify-center w-fit p-[1px] bg-STROKE_GRADIENT_SHIFT rounded-[100px] ${
         fullWidthOnMobile ? "max-[500px]:w-full" : ""
       }`}
-      style={{ width }}
+      style={{ width: isBreakpoint ? breakpoint?.width : width }}
       variants={variants}
       initial={"initial"}
       whileHover={"hover"}
