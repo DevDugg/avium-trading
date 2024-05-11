@@ -30,7 +30,7 @@ const Benefits = () => {
         <AnimateInView {...defaultScrollVariants}>
           <SectionTitle>What you will get at Avium</SectionTitle>
         </AnimateInView>
-        <div className="grid grid-cols-THREE gap-2">
+        <div className="grid grid-cols-THREE gap-2 max-[870px]:flex max-[870px]:flex-col">
           {benefits.map((benefit, i) => (
             <AnimateInView key={i} {...defaultScrollVariants} transition={{ delay: 0.2 + 0.2 * i }} height="100%">
               <Benefit {...benefit} />
