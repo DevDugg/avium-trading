@@ -51,17 +51,23 @@ const Pricing = () => {
         <AnimateInView {...defaultScrollVariants}>
           <SectionTitle>Pricing</SectionTitle>
         </AnimateInView>
-        <div className="flex flex-col gap-12">
+        <div className="flex flex-col gap-12 max-lg:gap-10">
           <div className="flex flex-col gap-6">
-            <h3 className="text-H3 font-bold">Trading mentorship</h3>
+            <h3 className="text-H3 font-bold max-lg:text-xl">Trading mentorship</h3>
             <AnimateInView {...defaultScrollVariants}>
-              <div className="pricing-card-big px-6 py-10 rounded-3xl bg-LIGHTBLACK grid grid-cols-TWO">
+              <div className="pricing-card-big px-6 py-10 rounded-3xl bg-LIGHTBLACK grid grid-cols-TWO gap-6 max-lg:flex max-lg:flex-col max-lg:gap-8">
                 <div className="flex flex-col gap-10 justify-between">
                   <div className="flex flex-col gap-6">
                     <h2 className="text-H2 font-bold">{pricingCardBig.title}</h2>
                     <p className="text-GRAY text-lg">{pricingCardBig.subtitle}</p>
                   </div>
-                  <CTALink href="#" title="Book a call" width="380px" />
+                  <CTALink
+                    href="#"
+                    title="Book a call"
+                    width="380px"
+                    breakpoint={{ value: 1024, width: "100%" }}
+                    extendedPaddingOnMobile
+                  />
                 </div>
                 <div className="flex flex-col gap-4">
                   <span className="font-medium text-2xl">Features</span>
@@ -74,9 +80,9 @@ const Pricing = () => {
               </div>
             </AnimateInView>
           </div>
-          <div className="flex flex-col gap-2">
-            <h3 className="text-H3 font-bold">1 - on - 1</h3>
-            <div className="grid grid-cols-THREE gap-2">
+          <div className="flex flex-col gap-6">
+            <h3 className="text-H3 font-bold max-lg:text-xl">1 - on - 1</h3>
+            <div className="grid grid-cols-THREE gap-2 max-[1090px]:flex max-[1090px]:flex-col">
               {pricingCards.map((card, index) => (
                 <AnimateInView key={index} {...defaultScrollVariants} transition={{ delay: 0.2 + 0.2 * index }}>
                   <PricingCard {...card} />

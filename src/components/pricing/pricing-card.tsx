@@ -11,7 +11,7 @@ interface PricingCardProps {
 
 const PricingCard = ({ features, note, subtitle, title, price }: PricingCardProps) => {
   return (
-    <div className="pricing-card px-6 py-10 rounded-3xl flex flex-col gap-6 bg-LIGHTBLACK">
+    <div className="pricing-card px-6 py-10 rounded-3xl flex flex-col gap-6 bg-LIGHTBLACK max-[1090px]:gap-8">
       <div className="flex flex-col gap-2">
         <h3 className="text-H3 font-bold">{title}</h3>
         <p className="text-lg text-GRAY">{subtitle}</p>
