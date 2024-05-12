@@ -43,7 +43,7 @@ const Guarantee = ({ name, number, hoveredNumber, position, description }: Guara
       }}
     >
       <motion.div
-        className="absolute top-0 left-0 w-full h-full bg-GRADIENT flex items-center justify-center pointer-events-none p-6 max-lg:p-4 max-sm:py-2 max-[500px]:px-3"
+        className="absolute top-0 left-0 size-full bg-GRADIENT flex items-center justify-between pointer-events-none p-6 max-lg:p-4 max-sm:py-2 max-[500px]:px-3"
         initial={{
           opacity: 0,
         }}
@@ -51,9 +51,7 @@ const Guarantee = ({ name, number, hoveredNumber, position, description }: Guara
           opacity: hoveredNumber === position ? 1 : 0,
         }}
       >
-        <span className="text-2xl w-fit font-bold max-lg:text-base max-sm:text-xs max-sm:font-normal">
-          {description}
-        </span>
+        <span className="text-2xl font-bold max-lg:text-base max-sm:text-xs max-sm:font-normal">{description}</span>
       </motion.div>
       <motion.div
         className="flex flex-col items-start gap-10 w-fit max-sm:gap-6 max-[450px]:gap-4"
