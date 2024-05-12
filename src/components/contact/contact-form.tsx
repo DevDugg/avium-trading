@@ -22,13 +22,9 @@ const ContactForm = () => {
   const formSchema: ZodType<FormData> = z.object({
     email_or_discord: z
       .string()
-      .email({ message: "Please enter a valid email" })
-      .or(
-        z
-          .string()
-          .min(2, { message: "Please enter a valid Discord username or email" })
-          .max(32, { message: "Please enter a valid Discord username or email" }),
-      ),
+      .min(2, { message: "Please enter a valid Discord username or email" })
+      .max(32, { message: "Please enter a valid Discord username or email" })
+      .or(z.string().email({ message: "Please enter a valid Discord username or email" })),
     experience: z.string().min(1, { message: "Experience is required" }),
     risk_capital: z.string().min(1, { message: "risk_capital is required" }),
   });
