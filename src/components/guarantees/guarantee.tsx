@@ -17,7 +17,7 @@ interface GuaranteeProps {
 const Guarantee = ({ name, number, hoveredNumber, position, description }: GuaranteeProps) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.3,
+    threshold: 0,
   });
 
   const [latest, setLatest] = useState(0);
@@ -43,7 +43,7 @@ const Guarantee = ({ name, number, hoveredNumber, position, description }: Guara
       }}
     >
       <motion.div
-        className="absolute top-0 left-0 w-full h-full bg-GRADIENT -z-10 flex items-center justify-center pointer-events-none p-6 max-lg:p-4 max-sm:py-2 max-[500px]:px-3"
+        className="absolute top-0 left-0 w-full h-full bg-GRADIENT flex items-center justify-center pointer-events-none p-6 max-lg:p-4 max-sm:py-2 max-[500px]:px-3"
         initial={{
           opacity: 0,
         }}

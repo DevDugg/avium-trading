@@ -7,5 +7,5 @@ export const defaultScrollVariants = {
     opacity: 1,
     y: 0,
   },
-  threshold: 0.4,
+  threshold: 0.1,
 };
