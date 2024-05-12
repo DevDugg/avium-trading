@@ -18,7 +18,7 @@ const footerLinks = [
 
 const FooterBottom = () => {
   return (
-    <div className="footer-bottom flex gap-6 justify-between items-center">
+    <div className="footer-bottom flex gap-6 justify-between items-center max-md:flex-col-reverse">
       <div className="flex gap-6 text-lg text-GRAY">
         <Link href={"/tos"}>Terms Of Service</Link>
         <Link href={"/privacy-policy"}>Privacy Policy</Link>

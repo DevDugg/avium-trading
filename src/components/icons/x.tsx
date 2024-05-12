@@ -5,39 +5,32 @@ import colors from "@/colors";
 import { motion } from "framer-motion";
 
 interface XProps {
-  size?: string;
   isHovered: boolean;
 }
 
-const X: FC<XProps> = ({ isHovered, size }: XProps) => {
+const X: FC<XProps> = ({ isHovered }: XProps) => {
   return (
-    <motion.svg
-      width={size || 24}
-      height={size || 24}
-      viewBox={`0 0 ${size || 24}${size || 24}`}
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <motion.g clipPath="url(#clip0_672_4)">
+    <motion.svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <motion.g clipPath="url(#clip0_688_2)">
         <motion.rect
           y="0.5"
-          width="24"
-          height="24"
-          rx="12"
+          width="40"
+          height="40"
+          rx="20"
           initial={{ fill: colors.WHITE }}
           animate={isHovered ? { fill: colors.GRAY } : {}}
         />
         <motion.path
           fillRule="evenodd"
           clipRule="evenodd"
-          d="M9.00159 5.09375H3.89062L9.95039 13.098L4.27828 19.8125H6.89897L11.189 14.7341L14.9984 19.7658H20.1094L13.8735 11.5289L13.8846 11.5431L19.2537 5.18722H16.633L12.6458 9.90725L9.00159 5.09375ZM6.7118 6.49555H8.30292L17.2882 18.364H15.6971L6.7118 6.49555Z"
+          d="M15.0027 8.15625H6.48438L16.584 21.4966L7.13047 32.6875H11.4983L18.6484 24.2234L24.9973 32.6096H33.5156L23.1225 18.8816L23.1409 18.9052L32.0895 8.31203H27.7217L21.0763 16.1788L15.0027 8.15625ZM11.1863 10.4926H13.8382L28.8137 30.2733H26.1618L11.1863 10.4926Z"
           fill="#0A0B0F"
         />
       </motion.g>
       <motion.defs>
-        <clipPath id="clip0_672_4">
-          <rect y="0.5" width="24" height="24" rx="12" fill="white" />
-        </clipPath>
+        <motion.clipPath id="clip0_688_2">
+          <motion.rect y="0.5" width="40" height="40" rx="20" fill="white" />
+        </motion.clipPath>
       </motion.defs>
     </motion.svg>
   );

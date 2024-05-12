@@ -2,9 +2,7 @@
 
 import { FC, useState } from "react";
 
-import Image from "next/image";
 import { XProps } from "../icons/discord";
-import headerVariants from "@/variants/header.variants";
 import { motion } from "framer-motion";
 
 interface SocialLinkProps {
@@ -29,7 +27,7 @@ const SocialLink = ({ href, Icon, name }: SocialLinkProps) => {
     >
       <div className="flex gap-2">
         <div className="rounded-full overflow-hidden">
-          <Icon isHovered={hovered} size="24" />
+          <Icon isHovered={hovered} size="40" />
         </div>
         {/* <motion.span className="text-lg">{name}</motion.span> */}
       </div>
