@@ -80,7 +80,9 @@ const ContactForm = () => {
         </AnimateInView>
         <AnimateInView {...defaultScrollVariants}>
           <div className="flex justify-center pt-6">
-            <FormSubmit title="Book a call" width="380px" />
+            <div className="w-[380px] max-lg:w-full">
+              <FormSubmit title="Book a call" width="100%" />
+            </div>
           </div>
         </AnimateInView>
       </div>
