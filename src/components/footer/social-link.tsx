@@ -27,7 +27,7 @@ const SocialLink = ({ href, Icon, name }: SocialLinkProps) => {
     >
       <div className="flex gap-2">
         <div className="rounded-full overflow-hidden">
-          <Icon isHovered={hovered} size="40" />
+          <Icon isHovered={hovered} />
         </div>
         {/* <motion.span className="text-lg">{name}</motion.span> */}
       </div>
