@@ -14,11 +14,11 @@ const FAQItem = ({ answer, question, isOpen }: IFAQItemProps) => {
   return (
     <div className="bg-LIGHTBLACK p-6 rounded-2xl flex flex-col cursor-pointer">
       <div className="flex items-center gap-10 justify-between max-sm:gap-8 max-[450px]:gap-6">
-        <h3 className="text-H3 font-bold">{question}</h3>
+        <h3 className="text-H3 font-bold max-lg:text-lg">{question}</h3>
         <PlusMinus isOpen={isOpen} />
       </div>
       <motion.div
-        className="text-GRAY text-lg overflow-hidden"
+        className="text-GRAY text-lg overflow-hidden max-lg:text-BASE"
         initial={{ opacity: 0, height: 0, marginTop: 0 }}
         animate={isOpen ? { opacity: 1, height: "fit-content", marginTop: 40 } : {}}
       >
