@@ -10,6 +10,13 @@
   background-size: 200% 100%;
 }
 
+.clamped-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }

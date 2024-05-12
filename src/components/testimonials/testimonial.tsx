@@ -17,7 +17,9 @@ const Testimonial = ({ avatar, content, email, name }: TestimonialProps) => {
           <span className="text-GRAY">{email}</span>
         </div>
       </div>
-      <p className="text-GRAY text-lg">{content}</p>
+      <div className="h-fit">
+        <p className="clamped-text text-GRAY text-lg">{content}</p>
+      </div>
     </div>
   );
 };

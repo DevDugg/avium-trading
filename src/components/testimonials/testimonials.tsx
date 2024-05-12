@@ -12,7 +12,7 @@ const Testimonials = () => {
           <SectionTitle>What others say about us</SectionTitle>
         </AnimateInView>
         <AnimateInView {...defaultScrollVariants} threshold={0.2}>
-          <div className="relative max-h-[1413px] h-full">
+          <div className="relative h-[1413px]">
             <div className="absolute top-0 left-0 w-full h-full bg-TESTIMONIALS pointer-events-none z-10"></div>
             <div className="flex gap-4">
               <TestimonialColon direction="up" />
