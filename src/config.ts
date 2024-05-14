@@ -1,4 +1,5 @@
 import colors from "./colors";
+import { generalData } from "./data/general.data";
 
 interface ConfigProps {
   appName: string;
@@ -11,9 +12,9 @@ interface ConfigProps {
 }
 
 const config = {
-  appName: "Avium",
-  appDescription: "Unlock your Trading Potential with Personalized Mentorship and High-Quality Resources",
-  domainName: "avium-xi.vercel.app",
+  appName: generalData.appName,
+  appDescription: generalData.appDescription,
+  domainName: generalData.domainName,
   colors: {
     theme: "light",
     main: colors.ACCENT,
