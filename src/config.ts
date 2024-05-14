@@ -11,7 +11,7 @@ interface ConfigProps {
   };
 }
 
-const config = {
+const config: ConfigProps = {
   appName: generalData.appName,
   appDescription: generalData.appDescription,
   domainName: generalData.domainName,
@@ -19,6 +19,6 @@ const config = {
     theme: "light",
     main: colors.ACCENT,
   },
-} as ConfigProps;
+};
 
 export default config;
