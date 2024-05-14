@@ -3,6 +3,7 @@
 import { AnimationProps, TargetAndTransition, VariantLabels, motion } from "framer-motion";
 
 import { PropsWithChildren } from "react";
+import { generalData } from "@/data/general.data";
 import { useInView } from "react-intersection-observer";
 
 interface Props extends PropsWithChildren {
@@ -21,8 +22,8 @@ const AnimateInView = ({ children, inViewVariant, initialVariant, threshold = 0.
   return (
     <motion.div
       ref={ref}
-      initial={initialVariant}
-      animate={inView ? inViewVariant : {}}
+      initial={inView && generalData.useScrollAnimations ? initialVariant : {}}
+      animate={inView && generalData.useScrollAnimations ? inViewVariant : {}}
       transition={{
         ease: [0.16, 1, 0.3, 1],
         duration: 0.9,

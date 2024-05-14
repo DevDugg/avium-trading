@@ -5,55 +5,19 @@ import PricingCard from "./pricing-card";
 import SectionContainer from "../structure/section-container";
 import SectionTitle from "../structure/section-title";
 import { defaultScrollVariants } from "@/variants/default-scroll.variants";
-
-const pricingCards = [
-  {
-    title: "Basic",
-    subtitle: "Great for portfolio reviews",
-    price: "$300",
-    note: "per hour",
-    features: ["1 Session at a time"],
-  },
-  {
-    title: "Optimal",
-    subtitle: "Great for portfolio reviews",
-    price: "$275",
-    note: "per session",
-    features: ["5-10 Sessions at a time"],
-  },
-  {
-    title: "Experienced",
-    subtitle: "5-10 Sessions at a time",
-    note: "Custom rate",
-    features: ["10+ Sessions"],
-  },
-];
-
-const pricingCardBig = {
-  title: "The Avium Mentorship",
-  subtitle:
-    "Ready to trade smarter and win? Our seasoned mentors are ready to show you the ropes. Whether you're a beginner or struggling, in just 60 days we'll simplify the market for you and help you design your winning strategies.",
-  features: [
-    "18 Livestreams covering everything from core trading principles to advanced techniques for trading and investing.",
-    "Five 1-on-1 sessions with one of our mentors",
-    "Written trading guide covering the core content",
-    "Daily charting challenges",
-    "Access to a live chat with the mentors to ask questions",
-    "Chat with other cohort members to learn together",
-    "Trading Log & Backtesting Templates",
-  ],
-};
+import { pricingData } from "@/data/pricing.data";
 
 const Pricing = () => {
+  const { pricingCardBig, smallPricingCards: pricingCards, subtitle_1, subtitle_2, title } = pricingData;
   return (
     <section className="pricing" id="pricing">
       <SectionContainer>
         <AnimateInView {...defaultScrollVariants}>
-          <SectionTitle>Pricing</SectionTitle>
+          <SectionTitle>{title}</SectionTitle>
         </AnimateInView>
         <div className="flex flex-col gap-12 max-lg:gap-10">
           <div className="flex flex-col gap-6">
-            <h3 className="text-H3 font-bold max-lg:text-xl">Trading mentorship</h3>
+            <h3 className="text-H3 font-bold max-lg:text-xl">{subtitle_1}</h3>
             <AnimateInView {...defaultScrollVariants}>
               <div className="pricing-card-big px-6 py-10 rounded-3xl bg-LIGHTBLACK grid grid-cols-TWO gap-6 max-lg:flex max-lg:flex-col max-lg:gap-8">
                 <div className="flex flex-col gap-10 justify-between">
@@ -62,8 +26,8 @@ const Pricing = () => {
                     <p className="text-GRAY text-lg">{pricingCardBig.subtitle}</p>
                   </div>
                   <CTALink
-                    href="#"
-                    title="Book a call"
+                    href={pricingCardBig.cta.link}
+                    title={pricingCardBig.cta.text}
                     width="100%"
                     // breakpoint={{ value: 1024, width: "100%" }}
                     extendedPaddingOnMobile
@@ -81,7 +45,7 @@ const Pricing = () => {
             </AnimateInView>
           </div>
           <div className="flex flex-col gap-6">
-            <h3 className="text-H3 font-bold max-lg:text-xl">1 - on - 1</h3>
+            <h3 className="text-H3 font-bold max-lg:text-xl">{subtitle_2}</h3>
             <div className="grid grid-cols-THREE gap-2 max-[1090px]:flex max-[1090px]:flex-col">
               {pricingCards.map((card, index) => (
                 <AnimateInView key={index} {...defaultScrollVariants} transition={{ delay: 0.2 + 0.2 * index }}>

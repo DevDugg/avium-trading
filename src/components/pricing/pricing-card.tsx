@@ -7,9 +7,13 @@ interface PricingCardProps {
   price?: string;
   note: string;
   features: string[];
+  cta: {
+    text: string;
+    link: string;
+  };
 }
 
-const PricingCard = ({ features, note, subtitle, title, price }: PricingCardProps) => {
+const PricingCard = ({ features, note, subtitle, title, price, cta }: PricingCardProps) => {
   return (
     <div className="pricing-card px-6 py-10 rounded-3xl flex flex-col gap-6 bg-LIGHTBLACK max-[1090px]:gap-8">
       <div className="flex flex-col gap-2">
@@ -26,7 +30,7 @@ const PricingCard = ({ features, note, subtitle, title, price }: PricingCardProp
           <span className="text-[48px]">{note}</span>
         )}
       </div>
-      <CTA link="#" title="Get started" />
+      <CTA link={cta.link} title={cta.text} />
       <div className="flex flex-col gap-4">
         <span className="font-medium text-2xl">Features</span>
         <div className="flex flex-col gap-4">

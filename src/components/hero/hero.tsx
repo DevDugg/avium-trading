@@ -3,8 +3,10 @@ import Container from "../container";
 import Header from "../header/header";
 import HeroTestimonials from "./hero-testimonials";
 import Image from "next/image";
+import { heroData } from "@/data/hero.data";
 
 const Hero = () => {
+  const { title, subtitle, cta } = heroData;
   return (
     <section className="hero" id="hero">
       <Container className="flex gap-20 max-lg:flex-col max-lg:items-center max-lg:gap-16 max-md:gap-12">
@@ -15,13 +17,13 @@ const Hero = () => {
           <div className="flex flex-col gap-12 justify-between h-full">
             <div className="flex flex-col gap-6 max-lg:items-center max-lg:gap-4">
               <h1 className="text-H1 leading-H1 font-medium max-lg:text-center max-lg:text-[64px] max-md:text-[48px]">
-                Learn to Trade Like a Pro
+                {title}
               </h1>
               <p className="text-GRAY text-lg max-lg:text-center max-lg:max-w-[70%] max-md:text-base max-md:max-w-[80%] max-sm:max-w-none">
-                Unlock your Trading Potential with Personalized Mentorship and High-Quality Resources
+                {subtitle}
               </p>
               <div className="pt-6 max-lg:flex max-lg:justify-center max-lg:pt-2">
-                <CTALink title={"Get started"} href="#pricing" />
+                <CTALink title={cta.text} href={cta.link} />
               </div>
             </div>
             <HeroTestimonials />

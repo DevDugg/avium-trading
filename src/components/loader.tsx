@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Logo from "@/components/logo";
 import { PropsWithChildren } from "react";
+import { generalData } from "@/data/general.data";
 import { motion } from "framer-motion";
 
 const Loader = ({ children }: PropsWithChildren) => {
@@ -19,6 +20,7 @@ const Loader = ({ children }: PropsWithChildren) => {
           stiffness: 210,
           delay: 1,
         }}
+        style={generalData.useEntryAnimation ? {} : { display: "none" }}
       >
         <Logo size={80} />
         <Image alt="avium" src="/images/avium.svg" width={140} height={80} loading="eager" priority />

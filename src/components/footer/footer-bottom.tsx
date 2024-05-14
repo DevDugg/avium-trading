@@ -2,17 +2,18 @@ import Discord from "../icons/discord";
 import Link from "next/link";
 import SocialLink from "./social-link";
 import X from "../icons/x";
+import { socialsData } from "@/data/socials.data";
 
 const footerLinks = [
   {
     name: "X (Twitter)",
     Icon: X,
-    href: "https://twitter.com/PidgeonTrades",
+    href: socialsData.x,
   },
   {
     name: "Discord",
     Icon: Discord,
-    href: "https://discord.gg/NkAzCS5Ggt",
+    href: socialsData.discord,
   },
 ];
 

@@ -3,13 +3,14 @@ import SectionContainer from "../structure/section-container";
 import SectionTitle from "../structure/section-title";
 import TestimonialColon from "./testimonial-colon";
 import { defaultScrollVariants } from "@/variants/default-scroll.variants";
+import { testimonialsData } from "@/data/testimonials.data";
 
 const Testimonials = () => {
   return (
     <section className="testimonials" id="testimonials">
       <SectionContainer>
         <AnimateInView {...defaultScrollVariants}>
-          <SectionTitle>What others say about us</SectionTitle>
+          <SectionTitle>{testimonialsData.title}</SectionTitle>
         </AnimateInView>
         <AnimateInView {...defaultScrollVariants} threshold={0.2}>
           <div className="relative h-[1413px]">
