@@ -71,7 +71,7 @@ const ContactForm = () => {
             required
             label="Your experience"
             type="text"
-            placeholder="Please share your experience in the market and how Avium might help you"
+            placeholder="Please share your experience with the market. What's been your biggest struggle? How long have you been trying to learn? What is your goal?"
             error={errors.experience}
             register={register}
             name="experience"
