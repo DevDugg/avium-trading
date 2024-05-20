@@ -63,7 +63,7 @@ const ContactForm = () => {
             error={errors.risk_capital}
             register={register}
             name="risk_capital"
-            items={["$1000", "$5000", "$10000"]}
+            items={["<$5,000", "$5,001-$10,000", "$10,001-$30,000", "$30,001-$100,000", "$100,001+"]}
           />
         </AnimateInView>
         <AnimateInView {...defaultScrollVariants}>
