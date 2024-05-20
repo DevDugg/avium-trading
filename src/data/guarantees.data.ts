@@ -10,7 +10,7 @@ export const guaranteesData = {
     {
       number: 5,
       name: "Succesful Traders",
-      description: "Out of the 5 students we've taught 5 are now making money trading",
+      description: "Out of the 5 students we've taught 5 are now making money in the markets",
     },
     {
       number: "9.75/10",
