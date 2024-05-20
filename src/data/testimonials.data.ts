@@ -77,38 +77,25 @@ export const testimonialsData = {
       email: "1-on-1 Student",
       content: `Avium is a game changer.  When I first tried my hand at trading it felt more like gambling than a learned skill.  
           I knew I was missing something.  All of my big wins kept getting canceled out by even bigger losses.  I was always intimidated by TA. 
+          
           I thought it was a skill used only by people much smarter than me. Avium showed me I was very wrong!  Shortly after I started working with Pidgeon I was transformed into a profitable trader hitting win after win with consistency.  
+          
           Avium gave me a gift that I can never repay and my ROI is literally off the charts.  If you want to be able to analyze charts like a pro and be a self-sufficient trader, no longer a slave to the next “call” in a trading group, then I highly recommend this program.  
+          
           It changed my life and I am sure it will do the same for you.`,
       avatar: "/images/avatar-1.png",
     },
     {
-      name: "Aber",
+      name: "Etash",
       email: "Mentorship Pupil",
-      content: `I would like to share my experience from the mentorship for the new pupils and whoever is interested or in doubt of embracing this journey.
+      content: `Before going through the mentorship I had very little understanding of how markets worked, how to analyze charts for patterns, how money flowed in the cryptocurrency space. 
       
-            Before anything else I’ll suggest to read this Twitter/X thread from Pidgeon on the stages of trading (Link Here)
-            
-            I went through the first stage (Uninformed Optimism) years ago, spot holding on the previous bullrun, which turned from spot holding to bagholding because “It’s GonNA ComEEe BAck!!!1!”
-            
-            Then came stage 2, I was “trying'' different strategies and following calls by some fake gurus on twitter without knowing what I was doing, then FOMOing when price pumped and not cutting my losses when price dropped, and again, still not understanding what I was looking at TA wise.
-            
-            After that, the valley of despair hit… and it hit hard.
-            
-            Hearing about the Edge workshops on Twitter I got into Weekly Wizdom. What caught me during one of the workshops was Pidgeon saying that no news or event is needed for price to move because everything is already in the charts; if you are good enough to read it then the chart will tell you everything.
-            
-            With no real TA experience I decided to give it a last try and hop in the mentorship and I just wish that happened a few years ago.. But hey, there’s always another trade 😉
-            
-            Charting/analysing a coin,stock or whatever has some PA has now become a “finding opportunity” activity. My confidence in my trade ideas has increased, charts are cleaner with explicit entries, take profits and exits. I get into trades if my conditions are met, otherwise I wait for price to come to me or until the chart suggests I should take action.
-            
-            Ashlin also shared that spot/investing is a form of trading and I totally agree with him. This is also covered during the lessons.
-            
-            The way to Success and Fulfilment (Stage 5) is still long but I'm pretty sure I’ve stepped up from the valley of despair to the Informed Optimist one (Stage 4)
-            
-            For this I would like to thank Pidgeon for the tools and resources he gave tous, his view of the market, the clarity during his lesson and most importantly the patience and willingness to answer each of our doubts during the live calls, a big thanks also goes to BTC_Jay for hopping into the lessons and dropping bangers. I cannot be more happy to have both of you guys as mentors and to be a student of yours! Always learning from both of you.
-            
-            
-            As for my fellow ‘Scholars’, Ashlin, Roigadaa and Etash, I wish you all the best of luck for everything and I’m happy to have shared these 2 months with you guys.`,
+          I was mostly a spot buyer (still am for the most part) and didn't think it was realistic to expect to make money actively trading. 
+          If I tried to trade something short-term it was more narrative-based rather than taking price action into account. I also wasn't as confident in my spot investments as I didn't have a good understanding of why certain investments would outperform others.
+
+          But after learning from Pidgeon, I feel much more comfortable in long-term investing as well as short-term active trading. 
+          
+          I have a better foundation now when I enter positions as I know where to look to and gather information. I mentally feel much more at ease since I now know the reasons as to why I enter and exit positions.`,
       avatar: "/images/avatar-2.png",
     },
     {
