@@ -4,7 +4,7 @@ export const guaranteesData = {
   guarantees: [
     {
       number: 5,
-      name: "Students",
+      name: "Students Taught",
       description: "More than 5 students have gone through our mentorship programs.",
     },
     {
