@@ -21,7 +21,7 @@ export const testimonialsData = {
           For my fellow pupils Aber, Roigadaa, Etash, happy to have learned alongside you and hope you feel the same way above. Good luck with your journey!
           
           ps BTC_Jay came in and dropped some banger mentorships along the way.`,
-      avatar: "/images/avatar-1.png",
+      avatar: "/images/ashlin.png",
     },
     {
       name: "Aber",
@@ -50,7 +50,7 @@ export const testimonialsData = {
             
             
             As for my fellow ‘Scholars’, Ashlin, Roigadaa and Etash, I wish you all the best of luck for everything and I’m happy to have shared these 2 months with you guys.`,
-      avatar: "/images/avatar-2.png",
+      avatar: "/images/aber.png",
     },
     {
       name: "Roigadaa",
@@ -69,7 +69,7 @@ export const testimonialsData = {
           
           Thx Pidgeon  for these 2 months, real pleasure.
           Also, Aber, Ashlin, Etash, it was good to learn with you guys.`,
-      avatar: "/images/avatar-3.png",
+      avatar: "/images/roigadaa.png",
     },
     // Repeated testimonials:
     {
@@ -83,7 +83,7 @@ export const testimonialsData = {
           Avium gave me a gift that I can never repay and my ROI is literally off the charts.  If you want to be able to analyze charts like a pro and be a self-sufficient trader, no longer a slave to the next “call” in a trading group, then I highly recommend this program.  
           
           It changed my life and I am sure it will do the same for you.`,
-      avatar: "/images/avatar-1.png",
+      avatar: "/images/newguy.png",
     },
     {
       name: "Etash",
@@ -96,7 +96,7 @@ export const testimonialsData = {
           But after learning from Pidgeon, I feel much more comfortable in long-term investing as well as short-term active trading. 
           
           I have a better foundation now when I enter positions as I know where to look to and gather information. I mentally feel much more at ease since I now know the reasons as to why I enter and exit positions.`,
-      avatar: "/images/avatar-2.png",
+      avatar: "/images/etash.png",
     },
     {
       name: "Roigadaa",
@@ -115,7 +115,7 @@ export const testimonialsData = {
           
           Thx Pidgeon  for these 2 months, real pleasure.
           Also, Aber, Ashlin, Etash, it was good to learn with you guys.`,
-      avatar: "/images/avatar-3.png",
+      avatar: "/images/roigadaa.png",
     },
   ],
 };
