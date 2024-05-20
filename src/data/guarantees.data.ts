@@ -9,7 +9,7 @@ export const guaranteesData = {
     },
     {
       number: 100%,
-      name: "100% Success Rate",
+      name: "Success Rate",
       description: "Out of the 5 students we've taught 5 are now making money in the markets",
     },
     {
