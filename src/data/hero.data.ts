@@ -8,15 +8,15 @@ export const heroData = {
   socialProof: [
     {
       rating: 5,
-      text: "5+ Students",
+      text: "Expert Mentorship",
     },
     {
       rating: 5,
-      text: "5+ Succesful Traders",
+      text: "100% Success Rate",
     },
     {
       rating: 5,
-      text: "10/10 Rating",
+      text: "9.75/10 Rating",
     },
   ],
 };
