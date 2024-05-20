@@ -8,7 +8,7 @@ export const guaranteesData = {
       description: "More than 5 students have gone through our mentorship programs.",
     },
     {
-      number: 5,
+      number: 100%,
       name: "100% Success Rate",
       description: "Out of the 5 students we've taught 5 are now making money in the markets",
     },
