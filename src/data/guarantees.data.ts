@@ -13,9 +13,9 @@ export const guaranteesData = {
       description: "Out of the 5 students we've taught 5 are now making money trading",
     },
     {
-      number: "10/10",
-      name: "Challenges",
-      description: "When asking all our students we got an average rating of 10/10",
+      number: "9.75/10",
+      name: "Rating",
+      description: "When asking all our students we got an average rating of 9.75/10",
     },
   ],
 };
