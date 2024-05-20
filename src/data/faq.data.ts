@@ -9,7 +9,7 @@ export const faqData = {
     {
       question: "How are the mentorship session conducted?",
       answer:
-        "The Mentorship is held through Discord. Twice a week, at times that best fit all cohort members' schedules there will be a livestream held within a private discord channel where students can learn and ask questions in real time. Outside of the live sessions the chats can also be used to learn together with the other students and ask questions.",
+        "The mentorship is held through Discord. Twice a week, at times that best fit all cohort members' schedules there will be a livestream held within a private discord channel where students can learn and ask questions in real time. Outside of the live sessions the chats can also be used to learn together with the other students and ask questions.",
     },
     {
       question: "What is the difference between the Mentorship and 1-on-1 Sessions?",
