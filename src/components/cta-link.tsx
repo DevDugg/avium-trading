@@ -38,7 +38,7 @@ const CTALink = ({ title, href, width, fullWidthOnMobile, breakpoint, extendedPa
           initial={"initial"}
           whileHover={"hover"}
         >
-          <span className="font-medium text-lg w-fit h-fit max-md:text-xl">{title}</span>
+          <span className="font-medium text-lg w-fit h-fit max-md:text-xl max-[420px]:text-lg">{title}</span>
         </motion.div>
       </Link>
     </motion.div>

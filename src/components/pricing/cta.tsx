@@ -16,7 +16,7 @@ const CTA = ({ link, title }: CTAProps) => {
       initial={"initial"}
       whileHover={"hover"}
       rel="noopener noreferrer"
-      className="rounded-[56px] relative overflow-hidden border border-WHITE px-6 py-4 w-full text-lg flex items-center justify-center max-md:py-6 max-md:text-xl"
+      className="rounded-[56px] relative overflow-hidden border border-WHITE px-6 py-4 w-full text-lg flex items-center justify-center max-md:py-6 max-md:text-xl max-[420px]:py-4 max-[420px]:text-lg"
     >
       <span className="opacity-0">{title}</span>
       <motion.span variants={textVariants} className="absolute top-[50%]">
