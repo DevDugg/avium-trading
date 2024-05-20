@@ -13,8 +13,7 @@ export const pricingData = {
       price: "$300",
       note: "per session",
       features: ["1 Session at a time",
-                "Portfolio Reviews",
-                "Live Analysis"],
+                "Portfolio Reviews"],
       cta: {
         text: "Get started",
         link: "#pricing",
