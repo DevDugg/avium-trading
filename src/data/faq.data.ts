@@ -9,17 +9,17 @@ export const faqData = {
     {
       question: "How are the mentorship session conducted?",
       answer:
-        "Yes. This is because the vast majority of new traders go into trading without learning first. It’s like letting a doctor operate without any training. Wouldn’t go very well would it? At Avium we provide that much needed education to help you join the 10% of winners.",
+        "The Mentorship is held through Discord. Twice a week, at times that best fit all cohort members' schedules there will be a livestream held within a private discord channel where students can learn and ask questions in real time. Outside of the live sessions the chats can also be used to learn together with the other students and ask questions.",
     },
     {
       question: "What is the difference between the Mentorship and 1-on-1 Sessions?",
       answer:
-        "A few reasons, firstly, we love trading and by extension telling people about it. One of the most satisfying feelings is seeing someone win and improving their situation using the things you taught them. Secondly, there is a lot of downtime with trading, time simply spent waiting, we think it’s better to fill that time with something productive.",
+        "The mentorship, while including some 1-on-1 sessions, is primarily structured material designed to teach everything trading and crypto. The 1-on-1 sessions on the other hand are completely personalized, focusing in on whatever particular struggles you might be facing.",
     },
     {
       question: " How much time commitment is required?",
       answer:
-        "A few reasons, firstly, we love trading and by extension telling people about it. One of the most satisfying feelings is seeing someone win and improving their situation using the things you taught them. Secondly, there is a lot of downtime with trading, time simply spent waiting, we think it’s better to fill that time with something productive.",
+        "The mentorship has a minimal time requirement of 2-3h/week, however, do keep in mind that more time spent on applying the concepts taught will lead to better results. For 1-on-1 sessions it is completely up to you at what pace you'd like to go.",
     },
   ],
 };
