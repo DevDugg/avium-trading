@@ -5,7 +5,7 @@ export const testimonialsData = {
     //   Original testimonials:
     {
       name: "Ashlin",
-      email: "sara.cruz@example.com",
+      email: "Mentorship Pupil",
       content: `Just completed the Avium beta cohort mentorship by Pidgeon . Here are my thoughts:
       
           Before the mentorship, I was purely an emotional trader and copied what everyone else was doing e.g. looking at the WW newsletter and TG calls. I felt like I was always a couple steps behind and waiting for someone to tell me what to do 🫥 . Also, I did not have any TA experience.
@@ -25,7 +25,7 @@ export const testimonialsData = {
     },
     {
       name: "Aber",
-      email: "sara.cruz@example.com",
+      email: "Mentorship Pupil",
       content: `I would like to share my experience from the mentorship for the new pupils and whoever is interested or in doubt of embracing this journey.
       
             Before anything else I’ll suggest to read this Twitter/X thread from Pidgeon on the stages of trading (Link Here)
@@ -54,7 +54,7 @@ export const testimonialsData = {
     },
     {
       name: "Roigadaa",
-      email: "sara.cruz@example.com",
+      email: "Mentorship Pupil",
       content: `Before the mentorship, I didn't know much about technical analysis. I used to trade based on feelings and trends in Solana shitcoins without really understanding the market. Now, I feel much more confident reading charts. When I started the mentorship, I wanted to learn to day trade perps, but it's harder to do alongside trading shitcoins, which takes up a lot of time.
       
           How I use what I learned: 
@@ -73,28 +73,18 @@ export const testimonialsData = {
     },
     // Repeated testimonials:
     {
-      name: "Ashlin",
-      email: "sara.cruz@example.com",
-      content: `Just completed the Avium beta cohort mentorship by Pidgeon . Here are my thoughts:
-      
-          Before the mentorship, I was purely an emotional trader and copied what everyone else was doing e.g. looking at the WW newsletter and TG calls. I felt like I was always a couple steps behind and waiting for someone to tell me what to do 🫥 . Also, I did not have any TA experience.
-          
-          After the mentorship, I feel very comfortable looking at a chart and analyzing it. Though I am no TA expert by any means, but rather look forward to running TA from what I have learned from Pidgeon and the mentorship 📉 . I often find myself referring back to the materials ie online reading and recorded videos to get reminded on what to do if I get stuck analyzing a chart. 
-          
-          In addition, I'm grateful that the mentorship has made me realize spot/investing is a form of trading. I originally wanted to solely trade on futures and thought that was the only way to Valhalla. This isn’t the case anymore and already incorporated gains from spot trading and looking forward to more.
-          
-          Lastly, the mentorship has helped me to filter out the news , larps, grifters, and twitter feed...and purely look at the charts. This has tremendously helped me keep my sanity when i see volatile changes in the market. 
-          
-          For Pidgeon, rock solid mentor. Very knowledgeable and professional throughout the mentorship. He was always a Weekly Wizdom caller that I was trying to catch up on, and provided 💯 X more than I expected during the mentorship. Highly suggest participating in an upcoming mentorship. You won’t be disappointed, you have my word.
-          
-          For my fellow pupils Aber, Roigadaa, Etash, happy to have learned alongside you and hope you feel the same way above. Good luck with your journey!
-          
-          ps BTC_Jay came in and dropped some banger mentorships along the way.`,
+      name: "HeyImTheNewGuy",
+      email: "1-on-1 Student",
+      content: `Avium is a game changer.  When I first tried my hand at trading it felt more like gambling than a learned skill.  
+          I knew I was missing something.  All of my big wins kept getting canceled out by even bigger losses.  I was always intimidated by TA. 
+          I thought it was a skill used only by people much smarter than me. Avium showed me I was very wrong!  Shortly after I started working with Pidgeon I was transformed into a profitable trader hitting win after win with consistency.  
+          Avium gave me a gift that I can never repay and my ROI is literally off the charts.  If you want to be able to analyze charts like a pro and be a self-sufficient trader, no longer a slave to the next “call” in a trading group, then I highly recommend this program.  
+          It changed my life and I am sure it will do the same for you.`,
       avatar: "/images/avatar-1.png",
     },
     {
       name: "Aber",
-      email: "sara.cruz@example.com",
+      email: "Mentorship Pupil",
       content: `I would like to share my experience from the mentorship for the new pupils and whoever is interested or in doubt of embracing this journey.
       
             Before anything else I’ll suggest to read this Twitter/X thread from Pidgeon on the stages of trading (Link Here)
@@ -123,7 +113,7 @@ export const testimonialsData = {
     },
     {
       name: "Roigadaa",
-      email: "sara.cruz@example.com",
+      email: "Mentorship Pupil",
       content: `Before the mentorship, I didn't know much about technical analysis. I used to trade based on feelings and trends in Solana shitcoins without really understanding the market. Now, I feel much more confident reading charts. When I started the mentorship, I wanted to learn to day trade perps, but it's harder to do alongside trading shitcoins, which takes up a lot of time.
       
           How I use what I learned: 
