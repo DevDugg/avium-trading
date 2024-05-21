@@ -56,7 +56,7 @@ const FormDropdown = ({
           whileFocus={{ borderColor: colors.ACCENT }}
         />
         <motion.ul
-          className="absolute left-0 bottom-[120%] border border-GRAY h-fit rounded-lg overflow-hidden w-full pointer-events-none cursor-pointer z-10"
+          className="absolute left-0 top-[120%] border border-GRAY h-fit rounded-lg overflow-auto w-full pointer-events-none cursor-pointer z-10"
           style={{ pointerEvents: isOpen ? "all" : "none" }}
           initial={{ opacity: 0 }}
           animate={isOpen ? { opacity: 1 } : {}}
