@@ -21,7 +21,7 @@ const TestimonialColon = ({ direction }: TestimonialColonProps) => {
       spaceBetween={0}
       slidesPerView={"auto"}
       allowTouchMove={false}
-      speed={20000}
+      speed={30000}
       direction="vertical"
       height={1413}
       autoHeight
