@@ -53,7 +53,7 @@ export const pricingData = {
       "Ready to trade smarter and win? Our seasoned mentors are ready to show you the ropes. Whether you're a beginner or struggling, in just 60 days we'll simplify the market for you and help you design your winning strategies.",
     features: [
       "18 Livestreams covering everything from core trading principles to advanced techniques for trading and investing.",
-      "Five 1-on-1 sessions with one of our mentors",
+      "Three 1-on-1 sessions with one of our mentors",
       "Written trading guide covering the core content",
       "Daily charting challenges",
       "Access to a live chat with the mentors to ask questions",
