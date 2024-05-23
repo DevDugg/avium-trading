@@ -58,7 +58,7 @@ const ContactForm = () => {
         progressStyle: { background: colors.RED },
       });
 
-    toast("Thank you! Redirecting...", {
+    toast("Form submitted successfully!", {
       progressStyle: { background: colors.ACCENT },
     });
   };
