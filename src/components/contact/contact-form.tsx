@@ -52,7 +52,7 @@ const ContactForm = () => {
       },
     });
 
-    if (response.ok) {
+    if (response.status === 200) {
       toast("Form submitted successfully");
       setIsLoading(false);
     } else {
