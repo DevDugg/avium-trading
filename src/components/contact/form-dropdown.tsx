@@ -10,6 +10,10 @@ import { useOnClickOutside } from "usehooks-ts";
 
 interface FormDropdownProps extends FormFieldProps {
   items: string[];
+  data: {
+    dataState: string;
+    setDataState: (dataState: string) => void;
+  };
 }
 
 const FormDropdown = ({
@@ -23,9 +27,9 @@ const FormDropdown = ({
   label,
   required,
   valueAsNumber,
+  data,
 }: FormDropdownProps) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedItem, setSelectedItem] = useState(items[0]);
 
   const dropdownRef = useRef(null);
   useOnClickOutside(dropdownRef, () => setIsOpen(false));
@@ -48,8 +52,8 @@ const FormDropdown = ({
           type={type}
           id={name}
           placeholder={placeholder}
-          value={selectedItem}
           readOnly
+          value={data.dataState}
           {...register(name, { valueAsNumber })}
           className="rounded-lg px-[14px] w-full py-4 text-BASE bg-LIGHTBLACK border border-GRAY placeholder:text-GRAY outline-none cursor-pointer"
           animate={error ? { borderColor: colors.RED } : { borderColor: colors.GRAY }}
@@ -66,11 +70,11 @@ const FormDropdown = ({
               key={item}
               className="dropdown-item px-[14px] py-4 text-BASE bg-LIGHTBLACK"
               onClick={() => {
-                setSelectedItem(item);
+                data.setDataState(item);
                 setIsOpen(false);
               }}
               initial={{ background: colors.LIGHTBLACK }}
-              animate={item === selectedItem ? { background: colors.LIGHTBLACK_HOVER } : {}}
+              animate={item === data.dataState ? { background: colors.LIGHTBLACK_HOVER } : {}}
               whileHover={{ background: colors.LIGHTBLACK_HOVER }}
             >
               {item}

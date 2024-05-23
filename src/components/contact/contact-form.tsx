@@ -7,7 +7,10 @@ import FormDropdown from "./form-dropdown";
 import FormField from "./form-field";
 import FormSubmit from "./form-submit";
 import { defaultScrollVariants } from "@/variants/default-scroll.variants";
+import { motion } from "framer-motion";
+import { toast } from "react-toastify";
 import { useForm } from "react-hook-form";
+import { useState } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 
 export interface FormData {
@@ -19,6 +22,9 @@ export interface FormData {
 export type ValidFieldNames = "email_or_discord" | "experience" | "risk_capital";
 
 const ContactForm = () => {
+  const [capital, setCapital] = useState<string>("<$5,000");
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+
   const formSchema: ZodType<FormData> = z.object({
     email_or_discord: z
       .string()
@@ -35,11 +41,35 @@ const ContactForm = () => {
     formState: { errors },
   } = useForm<FormData>({ resolver: zodResolver(formSchema) });
 
-  const onSubmit = (data: FormData) => {};
+  const onSubmit = async (data: FormData) => {
+    if (isLoading) return;
+    setIsLoading(true);
+    const response = await fetch("/api/save-form", {
+      method: "POST",
+      body: JSON.stringify({ ...data, risk_capital: capital }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+
+    if (response.ok) {
+      toast("Form submitted successfully");
+      setIsLoading(false);
+    } else {
+      toast("Failed to submit form, please try again later");
+      setIsLoading(false);
+    }
+  };
 
   return (
     <form className="contact-form flex flex-col items-center overflow-visible" onSubmit={handleSubmit(onSubmit)}>
-      <div className="max-w-[800px] w-full flex flex-col gap-4 overflow-visible h-fit">
+      <div className="max-w-[800px] w-full flex flex-col gap-4 overflow-visible h-fit relative">
+        <motion.div
+          className="bg-WHITE absolute left-0 top-0 size-full z-50"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: isLoading ? 0.4 : 0 }}
+          style={{ pointerEvents: isLoading ? "all" : "none" }}
+        ></motion.div>
         <AnimateInView {...defaultScrollVariants}>
           <FormField
             label="Your Discord username or Email"
@@ -58,6 +88,7 @@ const ContactForm = () => {
               text: "Risk capital refers to funds used for speculation and investments. Risk capital is by definition money you can afford to lose, as such, any funds you might need to pay the bills do not count towards it and should not be used for investments.",
               title: "?",
             }}
+            data={{ dataState: capital, setDataState: setCapital }}
             type="text"
             placeholder="Select your risk capital"
             error={errors.risk_capital}
@@ -81,7 +112,7 @@ const ContactForm = () => {
         <AnimateInView {...defaultScrollVariants}>
           <div className="flex justify-center pt-6">
             <div className="w-[380px] max-lg:w-full">
-              <FormSubmit title="Book a call" width="100%" />
+              <FormSubmit title="Submit" width="100%" />
             </div>
           </div>
         </AnimateInView>

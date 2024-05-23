@@ -1,14 +1,15 @@
 import "./globals.css";
-
-import type { Metadata, Viewport } from "next";
+import "react-toastify/dist/ReactToastify.css";
 
 import ConfigProvider from "@/components/config-provider";
 import Footer from "@/components/footer/footer";
-import { Inter } from "next/font/google";
 import Loader from "@/components/loader";
 import Script from "next/script";
 import ScrollProgress from "@/components/scroll-progress";
 import SmoothScroll from "@/components/smooth-scroll";
+import { ToastContainer } from "react-toastify";
+import type { Viewport } from "next";
+import colors from "@/colors";
 import config from "@/config";
 import { getSEOTags } from "@/lib/seo";
 import localFont from "next/font/local";
@@ -40,6 +41,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${bdo.className} bg-BACKGROUND text-WHITE`}>
         <Loader />
+        <ToastContainer toastStyle={{ background: colors.BLACK, color: colors.ACCENT }} theme="dark" />
         <SmoothScroll>
           <ConfigProvider>
             <ScrollProgress>
