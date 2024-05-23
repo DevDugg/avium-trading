@@ -6,6 +6,7 @@ import AnimateInView from "../animate-in-view";
 import FormDropdown from "./form-dropdown";
 import FormField from "./form-field";
 import FormSubmit from "./form-submit";
+import colors from "@/colors";
 import { defaultScrollVariants } from "@/variants/default-scroll.variants";
 import { motion } from "framer-motion";
 import { toast } from "react-toastify";
@@ -52,13 +53,14 @@ const ContactForm = () => {
       },
     });
 
-    if (response.status === 200) {
-      toast("Form submitted successfully");
-      setIsLoading(false);
-    } else {
-      toast("Failed to submit form, please try again later");
-      setIsLoading(false);
-    }
+    if (response === undefined || response.status !== 200 || !response.ok || !response.ok.toString())
+      return toast("Failed to submit the form", {
+        progressStyle: { background: colors.RED },
+      });
+
+    toast("Thank you! Redirecting...", {
+      progressStyle: { background: colors.ACCENT },
+    });
   };
 
   return (

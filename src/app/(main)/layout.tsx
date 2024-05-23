@@ -41,7 +41,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${bdo.className} bg-BACKGROUND text-WHITE`}>
         <Loader />
-        <ToastContainer toastStyle={{ background: colors.BLACK, color: colors.ACCENT }} theme="dark" />
+        <ToastContainer toastStyle={{ background: colors.BLACK, color: colors.WHITE }} theme="dark" />
         <SmoothScroll>
           <ConfigProvider>
             <ScrollProgress>
