@@ -23,7 +23,7 @@ export interface FormData {
 export type ValidFieldNames = "email_or_discord" | "experience" | "risk_capital";
 
 const ContactForm = () => {
-  const [capital, setCapital] = useState<string>("<$5,000");
+  const [capital, setCapital] = useState<string>("$5,000-$9,999");
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
   const formSchema: ZodType<FormData> = z.object({
