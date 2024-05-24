@@ -53,11 +53,13 @@ const ContactForm = () => {
       },
     });
 
-    if (response === undefined || response.status !== 200 || !response.ok || !response.ok.toString())
+    if (response === undefined || response.status !== 200 || !response.ok || !response.ok.toString()) {
+      setIsLoading(false);
       return toast("Failed to submit the form", {
         progressStyle: { background: colors.RED },
       });
-
+    }
+    setIsLoading(false);
     toast("Form submitted successfully!", {
       progressStyle: { background: colors.ACCENT },
     });
