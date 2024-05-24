@@ -17,6 +17,7 @@ const TestimonialColon = ({ direction }: TestimonialColonProps) => {
     <Swiper
       modules={[Autoplay]}
       autoplay={{ delay: 1, disableOnInteraction: false, reverseDirection: direction === "down" }}
+      containerModifierClass="touch-pan-y"
       loop
       spaceBetween={0}
       slidesPerView={"auto"}
@@ -25,7 +26,8 @@ const TestimonialColon = ({ direction }: TestimonialColonProps) => {
       direction="vertical"
       height={1413}
       autoHeight
-      className="pointer-events-none"
+
+      // className="pointer-events-none"
     >
       {Array.from({ length: 2 }).map((_, index) => (
         <SwiperSlide key={index} className="h-fit">
