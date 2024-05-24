@@ -18,6 +18,7 @@ const config: Config = {
         ACCENT: "#9695DF",
         GRAY: "#91908C",
         RED: "#CA2422",
+        MODALBG: "rgba(0, 0, 0, 0.7)",
       },
       backgroundImage: {
         GRADIENT: "linear-gradient(75.55deg, #8F72EC 20.49%, #5636C1 47.34%, #3C2396 79.41%)",

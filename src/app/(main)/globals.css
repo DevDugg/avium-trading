@@ -18,15 +18,19 @@
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #0a0b0f;
+  background: #202332;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #1d1d1d;
+  background: #343951;
 
   border-radius: 8px;
+}
+
+.swiper-wrapper {
+  touch-action: pan-y !important;
 }
