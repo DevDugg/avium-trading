@@ -52,7 +52,7 @@ const TestimonialsModal = ({ modalIndex, setModalIndex }: TestimonialsModalProps
             <span className="text-GRAY">{email}</span>
           </div>
         </div>
-        <p className="text-lg overflow-y-auto pr-6">{content}</p>
+        <p className="text-lg overflow-y-auto pr-6 leading-[32px]" dangerouslySetInnerHTML={{ __html: content }}></p>
       </div>
     </motion.div>
   );

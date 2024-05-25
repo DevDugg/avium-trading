@@ -3,7 +3,6 @@
 import Image from "next/image";
 import colors from "@/colors";
 import { motion } from "framer-motion";
-import { testimonialVariants } from "@/variants/testimonial.variants";
 import { useState } from "react";
 
 export interface TestimonialProps {
@@ -25,13 +24,17 @@ const Testimonial = ({ avatar, content, email, name, setModalIndex }: Props) => 
         onMouseOver={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         className="testimonial rounded-2xl bg-LIGHTBLACK p-6 flex flex-col gap-6 h-fit mb-4 relative -z-10 overflow-hidden cursor-pointer"
-        initial="initial"
-        whileHover={"hover"}
+        initial={{ scale: 1 }}
+        whileHover={{ scale: 1.03 }}
         onClick={() => {
           setModalIndex({ avatar, content, email, name });
         }}
       >
-        <motion.div className="top-0 left-0 absolute bg-GRADIENT size-full" variants={testimonialVariants}></motion.div>
+        <motion.div
+          className="top-0 left-0 absolute bg-GRADIENT size-full"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: isHovered ? 1 : 0 }}
+        ></motion.div>
         <div className="flex items-center gap-6 z-10">
           <Image src={avatar} alt="Profile picture" width={40} height={40} className="rounded-full" />
           <div className="flex flex-col gap-1 text-lg">
@@ -50,9 +53,8 @@ const Testimonial = ({ avatar, content, email, name, setModalIndex }: Props) => 
             className="clamped-text text-GRAY text-lg"
             initial={{ color: colors.GRAY }}
             animate={isHovered ? { color: colors.WHITE } : {}}
-          >
-            {content}
-          </motion.p>
+            dangerouslySetInnerHTML={{ __html: content }}
+          ></motion.p>
         </div>
       </motion.div>
     </>

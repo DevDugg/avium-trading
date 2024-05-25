@@ -29,7 +29,7 @@ const TestimonialColon = ({ direction, setModalIndex }: TestimonialColonProps) =
       autoHeight
     >
       {Array.from({ length: 2 }).map((_, index) => (
-        <SwiperSlide key={index} className="h-fit">
+        <SwiperSlide key={index} className="h-fit max-w-[422px]">
           {testimonialsData.testimonials.map((testimonial, index) => (
             <Testimonial key={index} {...testimonial} setModalIndex={setModalIndex} />
           ))}
