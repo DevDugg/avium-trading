@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useMediaQuery } from "usehooks-ts";
+import { useScrollToTarget } from "@/lib/use-scroll-to-target";
 import variants from "@/variants/cta.variants";
 
 interface CTALinkProps {
@@ -19,6 +20,7 @@ interface CTALinkProps {
 
 const CTALink = ({ title, href, width, fullWidthOnMobile, breakpoint, extendedPaddingOnMobile }: CTALinkProps) => {
   const isBreakpoint = useMediaQuery(`(max-width: ${breakpoint?.value || 0}px)`);
+  const { handleOnClick } = useScrollToTarget(href);
   return (
     <motion.div
       className={`gradient-shift flex items-center justify-center w-fit p-[1px] bg-STROKE_GRADIENT_SHIFT rounded-[100px] ${
@@ -29,18 +31,17 @@ const CTALink = ({ title, href, width, fullWidthOnMobile, breakpoint, extendedPa
       initial={"initial"}
       whileHover={"hover"}
     >
-      <Link href={href} className="w-full">
-        <motion.div
-          className={`gradient-shift cta-btn rounded-[100px] px-10 ${
-            extendedPaddingOnMobile ? "py-6" : "py-[10px]"
-          } bg-GRADIENT_SHIFT flex items-center justify-center w-full ${extendedPaddingOnMobile ? "max-md:py-6" : ""}`}
-          variants={variants}
-          initial={"initial"}
-          whileHover={"hover"}
-        >
-          <span className="font-medium text-lg w-fit h-fit max-md:text-xl max-[420px]:text-lg">{title}</span>
-        </motion.div>
-      </Link>
+      <motion.div
+        onClick={handleOnClick}
+        className={`gradient-shift cursor-pointer cta-btn rounded-[100px] px-10 ${
+          extendedPaddingOnMobile ? "py-6" : "py-[10px]"
+        } bg-GRADIENT_SHIFT flex items-center justify-center w-full ${extendedPaddingOnMobile ? "max-md:py-6" : ""}`}
+        variants={variants}
+        initial={"initial"}
+        whileHover={"hover"}
+      >
+        <span className="font-medium text-lg w-fit h-fit max-md:text-xl max-[420px]:text-lg">{title}</span>
+      </motion.div>
     </motion.div>
   );
 };

@@ -3,6 +3,7 @@
 import { duplicateVariants, textVariants } from "@/variants/pricing.variants";
 
 import { motion } from "framer-motion";
+import { useScrollToTarget } from "@/lib/use-scroll-to-target";
 
 interface CTAProps {
   title: string;
@@ -10,9 +11,11 @@ interface CTAProps {
 }
 
 const CTA = ({ link, title }: CTAProps) => {
+  const { handleOnClick } = useScrollToTarget(link);
   return (
     <motion.a
-      href={link}
+      onClick={link.startsWith("#") ? handleOnClick : undefined}
+      href={link.startsWith("#") ? "javascript:void(0)" : link}
       initial={"initial"}
       whileHover={"hover"}
       rel="noopener noreferrer"
