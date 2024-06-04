@@ -12,7 +12,7 @@ export const heroData = {
     },
     {
       rating: 5,
-      text: "Expert Mentorship",
+      text: "Pays for itself",
     },
     {
       rating: 5,
