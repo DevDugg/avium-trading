@@ -15,7 +15,7 @@ export const pricingData = {
       features: ["1 Session at a time", "Portfolio Reviews"],
       cta: {
         text: "Get started",
-        link: "#pricing",
+        link: "https://cal.com/pidgeontrades/1-on-1-session",
       },
     },
     {
@@ -26,7 +26,7 @@ export const pricingData = {
       features: ["5 or more Sessions at a time", "Personalized Curriculums"],
       cta: {
         text: "Get started",
-        link: "#pricing",
+        link: "https://forms.gle/DEvfteCwTRFruCjt9",
       },
     },
     {
@@ -36,7 +36,7 @@ export const pricingData = {
       features: ["Retainers", "Customized Programs"],
       cta: {
         text: "Contact Us",
-        link: "#contact",
+        link: "https://forms.gle/DEvfteCwTRFruCjt9",
       },
     },
   ],
