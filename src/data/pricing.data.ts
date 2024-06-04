@@ -26,7 +26,7 @@ export const pricingData = {
       features: ["5 or more Sessions at a time", "Personalized Curriculums"],
       cta: {
         text: "Get started",
-        link: "https://forms.gle/DEvfteCwTRFruCjt9",
+        link: "https://forms.gle/ZfZVK1SQxNuZ67a18",
       },
     },
     {
@@ -36,7 +36,7 @@ export const pricingData = {
       features: ["Retainers", "Customized Programs"],
       cta: {
         text: "Contact Us",
-        link: "https://forms.gle/DEvfteCwTRFruCjt9",
+        link: "https://forms.gle/ZfZVK1SQxNuZ67a18",
       },
     },
   ],
