@@ -66,7 +66,11 @@ const ContactForm = () => {
   };
 
   return (
-    <form className="contact-form flex flex-col items-center overflow-visible" onSubmit={handleSubmit(onSubmit)}>
+    <form
+      className="contact-form flex flex-col items-center overflow-visible"
+      name="lead-form"
+      onSubmit={handleSubmit(onSubmit)}
+    >
       <div className="max-w-[800px] w-full flex flex-col gap-4 overflow-visible h-fit relative">
         <motion.div
           className="bg-WHITE absolute left-0 top-0 size-full z-50"
