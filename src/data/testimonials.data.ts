@@ -191,37 +191,22 @@ export const testimonialsData = {
       avatar: "/images/etash.png",
     },
     {
-      name: "Roigadaa",
+      name: "G1nji",
       email: "Mentorship Pupil",
-      content: `Before the mentorship, I didn't know much about technical analysis. I used to trade based on feelings and trends in Solana shitcoins without really understanding the market. Now, I feel much more confident reading charts. When I started the mentorship, I wanted to learn to day trade perps, but it's harder to do alongside trading shitcoins, which takes up a lot of time.
-      
-      <br /><br />
-
-      How I use what I learned:
-      1- The technical analysis skills I gained help me find amazing entry points for trending shitcoins.
-      2- I also use them for long-term investments.
-      
-      <br /><br />
-
-      Pidgeon, the mentor, explains things very well and has excellent teaching abilities. Moreover, he is friendly and interesting to listen to.
-      
-      <br /><br />
-
-      I wholeheartedly recommend the mentorship.
-      
-      <br /><br />
-
-      yes ChatGPT wrote the paragraph above. I suck at writing, even in my mother tongue. It reflects 100% my opinion. 
-      
-      <br /><br />
-
-      Thx Pidgeon  for these 2 months, real pleasure.
-      
-      <br />
-      
-      Also, Aber, Ashlin, Etash, it was good to learn with you guys
-      `,
-      avatar: "/images/roigadaa.png",
+      content: `If you thought that you learned something from Pidgeon's Twitter/X threads, and you wish to have a comprehensive and structured version of his teachings, then look no further than the Avium Mentorship. 
+          Sensei Pidgeon's style makes it simple enough to understand but complex enough to give you an edge in the market. 
+         <br /><br />
+          This mentorship filled the many knowledge gaps that I was unaware of and it also helped systematize my trading plan and strategy. 
+         <br /><br />
+          This is NOT an online course where you're thrown into the deep end where you then proceed to drown in hours of video lectures as you struggle to stay afloat amid real-time volatile market swings.
+         <br /><br />
+          This is an active-learning mentorship where you are provided concise readings to stimulate Q&A engagement in the upcoming lectures. Between sessions, anonymous charts are also provided to encourage technical analysis and application of the tools we learned. 
+          I cannot recommend this Mentorship enough. 
+         <br /><br />
+          Special thanks to my cohort mates MincoDeluxe, Gcorm, Box_Robe, dmenace_1, drxgon5ly, LORD TOYNAIRE and botzelot who always carried the sessions with their interactions and timely questions. Thank you for picking up my slack
+          <br /><br />
+          Lastly, many thanks to the special guest lectures by BTC_Jay for exposing us to the exciting next stages of TA`,
+      avatar: "/images/g1nji.png",
     },
   ],
 };
