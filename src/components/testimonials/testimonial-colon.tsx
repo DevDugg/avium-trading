@@ -4,8 +4,10 @@ import "swiper/css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import Testimonial, { TestimonialProps } from "./testimonial";
+import { useEffect, useState } from "react";
 
 import { Autoplay } from "swiper/modules";
+import { shuffle } from "@/lib/shuffle-array";
 import { testimonialsData } from "@/data/testimonials.data";
 
 interface TestimonialColonProps {
@@ -14,7 +16,13 @@ interface TestimonialColonProps {
 }
 
 const TestimonialColon = ({ direction, setModalIndex }: TestimonialColonProps) => {
-  return (
+  const [testimonials, setTestimonials] = useState<TestimonialProps[]>([]);
+
+  useEffect(() => {
+    const shuffled = shuffle(testimonialsData.testimonials);
+    setTestimonials(shuffled);
+  }, []);
+  return testimonials.length > 0 ? (
     <Swiper
       modules={[Autoplay]}
       autoplay={{ delay: 1, disableOnInteraction: false, reverseDirection: direction === "down" }}
@@ -30,12 +38,12 @@ const TestimonialColon = ({ direction, setModalIndex }: TestimonialColonProps) =
     >
       {Array.from({ length: 2 }).map((_, index) => (
         <SwiperSlide key={index} className="h-fit max-w-[422px]">
-          {testimonialsData.testimonials.map((testimonial, index) => (
+          {testimonials.map((testimonial, index) => (
             <Testimonial key={index} {...testimonial} setModalIndex={setModalIndex} />
           ))}
         </SwiperSlide>
       ))}
     </Swiper>
-  );
+  ) : null;
 };
 export default TestimonialColon;
