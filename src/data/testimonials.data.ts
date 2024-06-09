@@ -206,7 +206,7 @@ export const testimonialsData = {
           Special thanks to my cohort mates MincoDeluxe, Gcorm, Box_Robe, dmenace_1, drxgon5ly, LORD TOYNAIRE and botzelot who always carried the sessions with their interactions and timely questions. Thank you for picking up my slack
           <br /><br />
           Lastly, many thanks to the special guest lectures by BTC_Jay for exposing us to the exciting next stages of TA`,
-      avatar: "/images/roigadaa.png",
+      avatar: "/images/g1nji.png",
     },
   ],
 };
