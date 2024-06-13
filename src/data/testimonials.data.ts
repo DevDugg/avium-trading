@@ -224,7 +224,7 @@ export const testimonialsData = {
             Shout outs to my cohort! @G corm @G1nji @Box_Robe @dmenace_1 @LORD TOYNAIRE @botzelot 
             <br /><br />
             And very special shoutouts to @aber for the many discussions we had and of course for @BTC_Jay for his amazing sessions!`,
-        avatar: "/images/g1nji.png",
+        avatar: "/images/minco.png",
       },
       {
         name: "Gcorm",
@@ -240,7 +240,7 @@ export const testimonialsData = {
             A special thanks to @BTC_Jay for joining us for two sessions.
             <br /><br />
             As for @MincoDeluxe @G1nji @Box_Robe @dmenace_1 @drxgon5ly @LORD TOYNAIRE @botzelot I hope I'll have a chance to cross path with you all again, it was a pleasure!`,
-        avatar: "/images/g1nji.png",
+        avatar: "/images/gcorm.png",
       },
       {
         name: "Lord Toynaire",
@@ -256,7 +256,7 @@ export const testimonialsData = {
             Thank you to @MincoDeluxe @G corm @G1nji @Box_Robe @dmenace_1 @botzelot it was a pleasure to learn alongside you! 
             <br /><br />
             Finally, thanks for all the wisdom and guidance @Pidgeon @BTC_Jay!`,
-        avatar: "/images/g1nji.png",
+        avatar: "/images/toynaire.png",
       },
   ],
 };
