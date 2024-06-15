@@ -16,7 +16,7 @@ export const heroData = {
     },
     {
       rating: 5,
-      text: '"It just works."',
+      text: '"It just works"',
     },
   ],
 };
