@@ -12,11 +12,11 @@ export const heroData = {
     },
     {
       rating: 5,
-      text: "Pays for itself",
+      text: '"Pays for itself"',
     },
     {
       rating: 5,
-      text: "It just works.",
+      text: '"It just works."',
     },
   ],
 };
