@@ -8,7 +8,7 @@ export const heroData = {
   socialProof: [
     {
       rating: 5,
-      text: "Avium is a Game Changer",
+      text: '"Avium is a Game Changer"',
     },
     {
       rating: 5,
@@ -16,7 +16,7 @@ export const heroData = {
     },
     {
       rating: 5,
-      text: "100% Success Rate",
+      text: "It just works.",
     },
   ],
 };
