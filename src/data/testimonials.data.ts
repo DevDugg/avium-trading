@@ -20,7 +20,7 @@ export const testimonialsData = {
           
           expert by any means, but rather look forward to running TA from what I have learned from Pidgeon 
           
-          and the mentorship 📉 . I often find myself referring back to the materials ie online reading and
+          and the mentorship. I often find myself referring back to the materials ie online reading and
           
           recorded videos to get reminded on what to do if I get stuck analyzing a chart.
           
@@ -46,7 +46,7 @@ export const testimonialsData = {
           
           For Pidgeon, rock solid mentor. Very knowledgeable and professional throughout the mentorship.
           
-          He was always a Weekly Wizdom caller that I was trying to catch up on, and provided 💯 X more
+          He was always a Weekly Wizdom caller that I was trying to catch up on, and provided X more
           
           than I expected during the mentorship. Highly suggest participating in an upcoming mentorship.
           
@@ -91,7 +91,7 @@ export const testimonialsData = {
 
       <br /><br />
 
-      With no real TA experience I decided to give it a last try and hop in the mentorship and I just wish that happened a few years ago.. But hey, there’s always another trade 😉
+      With no real TA experience I decided to give it a last try and hop in the mentorship and I just wish that happened a few years ago.. But hey, there’s always another trade
 
       <br /><br />
 
@@ -208,5 +208,55 @@ export const testimonialsData = {
           Lastly, many thanks to the special guest lectures by BTC_Jay for exposing us to the exciting next stages of TA`,
       avatar: "/images/g1nji.png",
     },
+    {
+        name: "MincoDeluxe",
+        email: "Mentorship Pupil",
+        content: `It can't be overstated how much of a difference this mentorship has made in my trading. Before joining, I knew I had a lot of room to improve but didn't know what direction to go or what to learn next. The mentorship program was excellent at laying down the fundamentals in a way that made them feel new to me, and every class built on the other very naturally.
+            <br /><br />
+            Each session is a deep dive into an essential part of being a self sufficient trader. The way the sessions are structured allows you a level of interaction with @Pidgeon  and the course material that feels very personal, and worked very well for the way I learn.
+            <br /><br />
+            The manageable cohort size allows you to really connect with your peers, too. I remember spending hours on calls and in discord with members of my cohort going over testing strategies and applying the course material in real time. Good times.
+            <br /><br />
+            And then there is the champion himself, @Pidgeon. The live sessions alone make the tuition an incredible value, but the fact that you get 1:1 sessions with @Pidgeon  to go over anything you want is next level value. I had so many lightbulb moments in private sessions that were invaluable to my overall learning experience.
+            <br /><br />
+            If you're new to trading, take the course. If you're not new to trading but want to level up, take the course. If you're a god tier trader and don't think you can learn anything more, take the course.
+            <br /><br />
+            Shout outs to my cohort! @G corm @G1nji @Box_Robe @dmenace_1 @LORD TOYNAIRE @botzelot 
+            <br /><br />
+            And very special shoutouts to @aber for the many discussions we had and of course for @BTC_Jay for his amazing sessions!`,
+        avatar: "/images/minco.png",
+      },
+      {
+        name: "Gcorm",
+        email: "Mentorship Pupil",
+        content: `This mentorship is the best thing I've ever seen to learn how to trade/invest/research/live your life!
+            <br /><br />
+            I mean, you want to see how Pidgeon thinks, you have to get the mentorship. First off, you get a textbook with all the knowledge needed and explained before each live session. This means you arrive prepared and ready to ask your question. This makes these session so much more valuable.
+            <br /><br />
+            It is so complete, you'll learn everything from any of the basics to the complex aspects of crypto trading/investment.
+            <br /><br />
+            There is no way you can go wrong here as @Pidgeon will always take all the time needed to answer all the question till the end of each sessions. You can't have more dedication than that!
+            <br /><br />
+            A special thanks to @BTC_Jay for joining us for two sessions.
+            <br /><br />
+            As for @MincoDeluxe @G1nji @Box_Robe @dmenace_1 @drxgon5ly @LORD TOYNAIRE @botzelot I hope I'll have a chance to cross path with you all again, it was a pleasure!`,
+        avatar: "/images/gcorm.png",
+      },
+      {
+        name: "Lord Toynaire",
+        email: "Mentorship Pupil",
+        content: `I have completed Avium's two-month trading mentorship program, and I can confidently say it has been a transformative experience for my trading journey. Before enrolling, my trading approach was inconsistent and often led by impulse rather than strategy. This mentorship has completely changed my mindset on how to trade and experiment with my style, always aiming for continuous improvement.
+            <br /><br />
+            The program's comprehensive structure is one of its standout features. We began with the basics, ensuring a solid foundation, which was crucial for understanding more complex concepts later on. Risk management, often overlooked by many traders, was thoroughly covered, instilling a disciplined approach to protect my investments. The emphasis on research has fundamentally altered how I prepare for each trade, now relying on data and trends rather than gut feelings.
+            <br /><br />
+            Strategy building was another key component. The mentorship guided us through developing personalized strategies tailored to our trading goals and styles. This hands-on approach allowed me to experiment and refine my techniques, learning what works best for me. The weekly live sessions were super informative, providing a wealth of information on each section of the mentorship. This mentorship program has a lot more to offer, and I highly recommend checking it out.
+            <br /><br />
+            Overall, the mentorship didn't just teach me how to trade; it equipped me with the tools and mindset needed to succeed in the trading world. I now approach trading with confidence, a solid strategy, and a commitment to continuous learning and improvement. If you're serious about improving your trading skills, this mentorship program is a must.
+            <br /><br />
+            Thank you to @MincoDeluxe @G corm @G1nji @Box_Robe @dmenace_1 @botzelot it was a pleasure to learn alongside you! 
+            <br /><br />
+            Finally, thanks for all the wisdom and guidance @Pidgeon @BTC_Jay!`,
+        avatar: "/images/toynaire.png",
+      },
   ],
 };
