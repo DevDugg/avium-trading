@@ -4,10 +4,9 @@ import "swiper/css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import Testimonial, { TestimonialProps } from "./testimonial";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 import { Autoplay } from "swiper/modules";
-import { shuffle } from "@/lib/shuffle-array";
 import { testimonialsData } from "@/data/testimonials.data";
 
 interface TestimonialColonProps {
@@ -18,8 +17,16 @@ interface TestimonialColonProps {
 const TestimonialColon = ({ direction, setModalIndex }: TestimonialColonProps) => {
   const [testimonials, setTestimonials] = useState<TestimonialProps[]>([]);
 
+  const shuffle = (array: any[]) => {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  };
+
   useEffect(() => {
-    const shuffled = shuffle(testimonialsData.testimonials);
+    const shuffled = shuffle([...testimonialsData.testimonials]);
     setTestimonials(shuffled);
   }, []);
   return testimonials.length > 0 ? (
