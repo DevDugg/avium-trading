@@ -1,5 +1,5 @@
 export const heroData = {
-  title: "We Teach You How to Trade—No Experience Needed",
+  title: "We Teach You How to Trade",
   subtitle: "From Beginner to Confident Trader: Personalized Mentorship to Help You Succeed",
   cta: {
     text: "Get started",
