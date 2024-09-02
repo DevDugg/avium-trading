@@ -52,10 +52,8 @@ export const pricingData = {
       "18 Livestreams covering everything from core trading principles to advanced techniques for trading and investing.",
       "Three 1-on-1 sessions with one of our mentors",
       "Written trading guide covering the core content",
-      "Charting Challenges",
-      "Access to a live chat with the mentors to ask questions",
-      "Chat with other cohort members to learn together",
-      "Trading Log & Backtesting Templates",
+      "A chat with the mentors and your fellow students",
+      "And much more!"
     ],
   },
 };
