@@ -52,7 +52,7 @@ export const pricingData = {
       "18 Livestreams covering everything from core trading principles to advanced techniques for trading and investing.",
       "Three 1-on-1 sessions with one of our mentors",
       "Written trading guide covering the core content",
-      "A chat with the mentors and your fellow students",
+      "A discord chat with the mentors to ask questions",
       "And much more!"
     ],
   },
