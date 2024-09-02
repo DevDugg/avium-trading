@@ -19,7 +19,8 @@ export const faqData = {
     {
       question: " How much time commitment is required?",
       answer:
-        "The mentorship has a minimal time requirement of 2-3h/week, however, do keep in mind that more time spent on applying the concepts taught will lead to better results. For 1-on-1 sessions it is completely up to you at what pace you'd like to go.",
+        "The mentorship only requires 2-3 hours a week. Do keep in mind however, that more time spent on applying the concepts taught will lead to better results.",
+        "For 1-on-1 sessions it is completely up to you at what pace you'd like to go.",
     },
   ],
 };
