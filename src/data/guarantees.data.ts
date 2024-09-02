@@ -1,6 +1,6 @@
 export const guaranteesData = {
   // The description is on the left side of the guarantees section
-  description: "In just 60 days, we'll teach you everything you need to trade on your own.",
+  description: "In just 60 days, we'll teach you everything you need to trade for yourself.",
   guarantees: [
     {
       number: 15,
