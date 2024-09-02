@@ -47,7 +47,7 @@ export const pricingData = {
       link: "#contact",
     },
     subtitle:
-      "Are you ready to become a winner? Our seasoned mentors are ready to show you the ropes. Whether you're a beginner or you've been trying to learn for a while, in just 60 days we'll simplify the market for you and help you build your winning strategies.",
+      "Are you ready to become a winner? Our seasoned mentors are here to show you the ropes. Whether you're a beginner or you've been trying to learn for a while, in just 60 days we'll simplify the market for you and help you build your winning strategies.",
     features: [
       "18 Livestreams covering everything from core trading principles to advanced techniques for trading and investing.",
       "Three 1-on-1 sessions with one of our mentors",
