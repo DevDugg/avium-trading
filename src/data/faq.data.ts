@@ -7,7 +7,7 @@ export const faqData = {
         "Anyone who wants to learn how to trade for themselves. Whether you know nothing about trading or have been in the markets for a while but really want to get serious about it. Our mentorship program is designed to take anyone who is willing to learn and teach them to trade for themselves.",
     },
     {
-      question: "How are the mentorship session conducted?",
+      question: "How are the mentorship sessions conducted?",
       answer:
         "The mentorship is held through Discord. Twice a week, at times that best fit all cohort members' schedules there will be a livestream held within a private discord channel where students can learn and ask questions in real time. Outside of the live sessions the chats can also be used to learn together with the other students and ask questions.",
     },
