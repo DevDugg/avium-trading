@@ -1,5 +1,5 @@
 export const benefitsData = {
-  title: "What you will get at Avium",
+  title: "What you will get with Avium",
   benefits: [
     {
       title: "Reach your Trading Potential",
@@ -9,7 +9,7 @@ export const benefitsData = {
     {
       title: "Expert Guidance, Always",
       description:
-        "Whether you're trying to understand the basics or exploring advanced strategies, our experts are always there to answer any question!",
+        "Whether you're trying to understand the basics or exploring advanced strategies, we are always there to answer any question!",
       img: "/images/benefit-2.svg",
     },
     {
