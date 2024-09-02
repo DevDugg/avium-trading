@@ -5,12 +5,12 @@ export const guaranteesData = {
     {
       number: 15,
       name: "Students Taught",
-      description: "We've turned over 15+ people into self-sufficient traders.",
+      description: "We've turned over 15 people into self-sufficient traders.",
     },
     {
       number: 15,
       name: "Recommendations",
-      description: "All our students would recommend our programs to their friends.",
+      description: "100% of our students would recommend us to their friends.",
     },
     {
       number: "10/10",
