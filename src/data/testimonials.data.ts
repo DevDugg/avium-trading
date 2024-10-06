@@ -266,7 +266,7 @@ export const testimonialsData = {
                   The way he teaches and explains things is simple for anyone who wants to learn. I was such a beginner, but now I can trade better using the knowledge I've gained.
                   <br /><br />
                   Also its been great to be able to message Pidgeon directly; he is always responsive with the questions and trade ideas that I asked him about. To get the insights from sensei and the way he see things is worth it.`,
-        avatar: "/images/toynaire.png",
+        avatar: "/images/sky.png",
       },
       {
         name: "Terra Naomi",
@@ -280,7 +280,7 @@ export const testimonialsData = {
                   Pidgeon's rate is incredibly reasonable, especially given the amount of time and personal attention we receive over the course of the ~9 weeks. I have no regrets about investing in this mentorship and am so grateful for the foundation I now have. 
                   <br /><br />
                   For anyone new to trading and serious about wanting to understand the charts and how all of this actually works: do not jump into anything, especially not an expensive mentorship. Take your time, observe the person you are considering working with, watch how they trade, how they interact. And when you're ready to go deeper with your education, talk to Pidgeon.`,
-        avatar: "/images/toynaire.png",
+        avatar: "/images/terra.png",
       },
       {
         name: "Ahawk",
@@ -294,7 +294,17 @@ export const testimonialsData = {
                   Pidgeon’s insights into market psychology and trading strategies were game changer and gave me a new level of confidence in my decision-making. This mentorship didn’t just improve my technical analysis skills; it completely reshaped how I approach trading overall. If you're looking to up your game and learn from someone who’s been there, this is the course for you.
 
                   Thanks Pidgeon & Fox for your invaluable time and great sessions throughout the mentorship`,
-        avatar: "/images/toynaire.png",
+        avatar: "/images/ahawk.png",
+      },
+      {
+        name: "DegenLewis",
+        email: "Mentorship Pupil",
+        content: `The course covered everything from technical analysis and risk management to trading psychology. Pidgeon’s teaching style was clear and engaging, with practical examples that made complex concepts easy to grasp. 
+                  <br /><br />
+                  His emphasis on strategy development and avoiding emotional trading was particularly valuable. 
+                  <br /><br />
+                  I left with a deeper understanding of market dynamics and more confidence in my trading decisions. Highly recommended for both beginners and intermediate traders!`,
+        avatar: "/images/degenlewis.png",
       },
   ],
 };
