@@ -60,7 +60,7 @@ export const testimonialsData = {
 
           <br /><br />
           
-          ps BTC_Jay came in and dropped some banger mentorships along the way.`,
+          ps Fox came in and dropped some banger mentorships along the way.`,
       avatar: "/images/ashlin.png",
     },
     {
@@ -107,7 +107,7 @@ export const testimonialsData = {
 
       <br /><br />
 
-      For this I would like to thank Pidgeon for the tools and resources he gave tous, his view of the market, the clarity during his lesson and most importantly the patience and willingness to answer each of our doubts during the live calls, a big thanks also goes to BTC_Jay for hopping into the lessons and dropping bangers. I cannot be more happy to have both of you guys as mentors and to be a student of yours! Always learning from both of you.
+      For this I would like to thank Pidgeon for the tools and resources he gave tous, his view of the market, the clarity during his lesson and most importantly the patience and willingness to answer each of our doubts during the live calls, a big thanks also goes to Fox for hopping into the lessons and dropping bangers. I cannot be more happy to have both of you guys as mentors and to be a student of yours! Always learning from both of you.
 
       <br /><br />
 
@@ -205,7 +205,7 @@ export const testimonialsData = {
          <br /><br />
           Special thanks to my cohort mates MincoDeluxe, Gcorm, Box_Robe, dmenace_1, drxgon5ly, LORD TOYNAIRE and botzelot who always carried the sessions with their interactions and timely questions. Thank you for picking up my slack
           <br /><br />
-          Lastly, many thanks to the special guest lectures by BTC_Jay for exposing us to the exciting next stages of TA`,
+          Lastly, many thanks to the special guest lectures by Fox for exposing us to the exciting next stages of TA`,
       avatar: "/images/g1nji.png",
     },
     {
@@ -223,7 +223,7 @@ export const testimonialsData = {
             <br /><br />
             Shout outs to my cohort! @G corm @G1nji @Box_Robe @dmenace_1 @LORD TOYNAIRE @botzelot 
             <br /><br />
-            And very special shoutouts to @aber for the many discussions we had and of course for @BTC_Jay for his amazing sessions!`,
+            And very special shoutouts to @aber for the many discussions we had and of course for @Fox for his amazing sessions!`,
         avatar: "/images/minco.png",
       },
       {
@@ -237,7 +237,7 @@ export const testimonialsData = {
             <br /><br />
             There is no way you can go wrong here as @Pidgeon will always take all the time needed to answer all the question till the end of each sessions. You can't have more dedication than that!
             <br /><br />
-            A special thanks to @BTC_Jay for joining us for two sessions.
+            A special thanks to @Fox for joining us for two sessions.
             <br /><br />
             As for @MincoDeluxe @G1nji @Box_Robe @dmenace_1 @drxgon5ly @LORD TOYNAIRE @botzelot I hope I'll have a chance to cross path with you all again, it was a pleasure!`,
         avatar: "/images/gcorm.png",
@@ -255,7 +255,45 @@ export const testimonialsData = {
             <br /><br />
             Thank you to @MincoDeluxe @G corm @G1nji @Box_Robe @dmenace_1 @botzelot it was a pleasure to learn alongside you! 
             <br /><br />
-            Finally, thanks for all the wisdom and guidance @Pidgeon @BTC_Jay!`,
+            Finally, thanks for all the wisdom and guidance @Pidgeon @Fox!`,
+        avatar: "/images/toynaire.png",
+      },
+      {
+        name: "Sky",
+        email: "Mentorship Pupil",
+        content: `Learning through the mentorship with Pidgeon has been a great experience. Even tho I got busy I couldn't always make the livestreams, I still managed to follow up on the sessions through the recordings; learning at my own pace. 
+                  <br /><br />
+                  The way he teaches and explains things is simple for anyone who wants to learn. I was such a beginner, but now I can trade better using the knowledge I've gained.
+                  <br /><br />
+                  Also its been great to be able to message Pidgeon directly; he is always responsive with the questions and trade ideas that I asked him about. To get the insights from sensei and the way he see things is worth it.`,
+        avatar: "/images/toynaire.png",
+      },
+      {
+        name: "Terra Naomi",
+        email: "Mentorship Pupil",
+        content: `Pidgeon is a knowledgable, patient, and generous teacher. I came to the mentorship with a lot of fear and negativity, based on my past experience. 
+                  <br /><br />
+                  Pidgeon's methodical and careful approach, along with super clear and articulate teaching style, reassured me that there was indeed a path to learning what I came to learn. 
+                  <br /><br />
+                  It felt less like gambling and more like a calculated and repeatable method that results in winning more often than we lose. He simplified and demystified the process in a way that built my confidence. 
+                  <br /><br />
+                  Pidgeon's rate is incredibly reasonable, especially given the amount of time and personal attention we receive over the course of the ~9 weeks. I have no regrets about investing in this mentorship and am so grateful for the foundation I now have. 
+                  <br /><br />
+                  For anyone new to trading and serious about wanting to understand the charts and how all of this actually works: do not jump into anything, especially not an expensive mentorship. Take your time, observe the person you are considering working with, watch how they trade, how they interact. And when you're ready to go deeper with your education, talk to Pidgeon.`,
+        avatar: "/images/toynaire.png",
+      },
+      {
+        name: "Ahawk",
+        email: "Mentorship Pupil",
+        content: `I couldn’t be more impressed with the experience and knowledge gained from the trading mentorship! Pidgeon broke down complex concepts into digestible lessons that were easy to follow, even for someone like me who came in with only a basic understanding of the markets. 
+                  <br /><br />
+                  Each session built on the previous one, allowing for steady, confident progress. If you ever felt confused Pidgeon has guides, resources and was highly available for a 1-on-1 session to help address any issues you may have found yourself running into trading. The recorded lessons were also a great bonus, allowing me to replay them whenever needed.
+                  <br /><br />
+                  What I appreciated most was the real-world application of the techniques. It wasn’t just theory — we analyzed live charts, identified key setups, and discussed market trends in real time. 
+                  <br /><br />
+                  Pidgeon’s insights into market psychology and trading strategies were game changer and gave me a new level of confidence in my decision-making. This mentorship didn’t just improve my technical analysis skills; it completely reshaped how I approach trading overall. If you're looking to up your game and learn from someone who’s been there, this is the course for you.
+
+                  Thanks Pidgeon & Fox for your invaluable time and great sessions throughout the mentorship`,
         avatar: "/images/toynaire.png",
       },
   ],
