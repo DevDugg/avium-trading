@@ -12,7 +12,7 @@ export const pricingData = {
       subtitle: "Learn at your own pace",
       price: "$166-300",
       note: "per session",
-      features: ["5 Session Minimum", "Portfolio Reviews", "Trading Education],
+      features: ["5 Session Minimum", "Portfolio Reviews", "Trading Education"],
       cta: {
         text: "Book a Call",
         link: "https://cal.com/pidgeontrades/1-on-1-session",
@@ -33,7 +33,7 @@ export const pricingData = {
       title: "Advanced",
       subtitle: "Looking for something specific? Customized Programs at Request",
       note: "Custom rate",
-      features: ["Retainers", "Customized Programs", "Stacking Discounts],
+      features: ["Retainers", "Customized Programs", "Stacking Discounts",],
       cta: {
         text: "Book a Call",
         link: "https://forms.gle/ZfZVK1SQxNuZ67a18",
