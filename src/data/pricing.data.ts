@@ -7,18 +7,18 @@ export const pricingData = {
     //   These objects can have 2 options:
     //   1. Contains price - if the pricing is not included, the note will be big
     //   2. Doesn't contain price - if the pricing is not included, the note will be small
-   /*{
+   {
       title: "Basic",
-      subtitle: "Great for portfolio reviews",
-      price: "$300",
+      subtitle: "Learn at your own pace",
+      price: "$166-300",
       note: "per session",
-      features: ["1 Session at a time", "Portfolio Reviews"],
+      features: ["5 Session Minimum", "Portfolio Reviews", "Trading Education],
       cta: {
-        text: "Get started",
+        text: "Book a Call",
         link: "https://cal.com/pidgeontrades/1-on-1-session",
       },
     },
-    {
+    /*{
       title: "Optimal",
       subtitle: "Personalized Curriculum",
       price: "<$275",
@@ -31,9 +31,9 @@ export const pricingData = {
     },*/
     {
       title: "Advanced",
-      subtitle: "Customized Programs at Request",
+      subtitle: "Looking for something specific? Customized Programs at Request",
       note: "Custom rate",
-      features: ["Retainers", "Customized Programs"],
+      features: ["Retainers", "Customized Programs", "Stacking Discounts],
       cta: {
         text: "Book a Call",
         link: "https://forms.gle/ZfZVK1SQxNuZ67a18",
