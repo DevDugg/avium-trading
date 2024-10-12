@@ -10,6 +10,7 @@ export const pricingData = {
    {
       title: "1-on-1 Mentorship",
       subtitle: "Learn at your own pace with our 1-on-1 Education programs. Our 1-on-1 Mentorships are designed for traders and investors with at least a $50k portfolio, who are looking for hands-on support on a flexible schedule.",
+      note: "",
       features: ["5 Session Minimum", "Trading Education", "50k Minimum Portfolio Size",],
       cta: {
         text: "Book a Call",
@@ -30,6 +31,7 @@ export const pricingData = {
     {
       title: "1-on-1 Advanced",
       subtitle: "Our Advanced programs are flexible 1-on-1 programs designed to provide long term support for traders and investors with at least a $100k portfolio. We teach you how to trade and invest in crypto & broader asset markets to achieve your growth goals.",
+      note: "",
       features: ["Retainers", "Customized Programs", "$100k Minimum Portfolio Size",],
       cta: {
         text: "Book a Call",
