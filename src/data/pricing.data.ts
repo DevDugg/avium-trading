@@ -1,6 +1,6 @@
 export const pricingData = {
-  title: "Pricing",
-  subtitle_1: "Trading mentorship",
+  title: "Our Products",
+  subtitle_1: "Avium Trading Mentorship",
   subtitle_2: "1 - on - 1",
 
    /*smallPricingCards: [
