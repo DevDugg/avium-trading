@@ -23,7 +23,7 @@ const PricingCardBig = () => {
           <CTALink href={pricingCardBig.cta.link} title={pricingCardBig.cta.text} width="100%" />
         </div>
         <div className="flex flex-col gap-4">
-          <span className="font-medium text-2xl max-[420px]:text-xl">Features</span>
+          <span className="font-medium text-2xl max-[420px]:text-xl">Includes</span>
           <div className="flex flex-col gap-4">
             {pricingCardBig.features.map((feature, index) => (
               <Feature key={index} title={feature} />
