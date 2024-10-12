@@ -15,7 +15,7 @@ export const pricingData = {
       features: ["5 Session Minimum", "Portfolio Reviews", "Trading Education"],
       cta: {
         text: "Book a Call",
-        link: "https://cal.com/pidgeontrades/1-on-1-session",
+        link: "#contact",
       },
     },
     /*{
@@ -31,12 +31,12 @@ export const pricingData = {
     },*/
     {
       title: "Advanced",
-      subtitle: "Looking for something specific? Customized Programs at Request",
+      subtitle: "Our Advanced programs are flexible 1-on-1 programs designed for traders and investors with at least a $100k portfolio value. We teach you how to trade and invest in crypto to achieve strong growth.",
       note: "Custom rate",
-      features: ["Retainers", "Customized Programs", "Stacking Discounts",],
+      features: ["Retainers", "Customized Programs", "$100k minimum portfolio size",],
       cta: {
         text: "Book a Call",
-        link: "https://forms.gle/ZfZVK1SQxNuZ67a18",
+        link: "#contact",
       },
     },
   ],
@@ -53,6 +53,7 @@ export const pricingData = {
       "Three 1-on-1 sessions with one of our mentors",
       "Written trading guide covering the core content",
       "A discord chat with the mentors to ask questions",
+      "$5,000 minimum portfolio size required",
       "And much more!"
     ],
   },
