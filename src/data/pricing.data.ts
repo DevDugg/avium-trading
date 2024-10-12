@@ -3,11 +3,11 @@ export const pricingData = {
   subtitle_1: "Avium Trading Mentorship",
   subtitle_2: "1 - on - 1",
 
-   /*smallPricingCards: [
+   smallPricingCards: [
     //   These objects can have 2 options:
     //   1. Contains price - if the pricing is not included, the note will be big
     //   2. Doesn't contain price - if the pricing is not included, the note will be small
-   {
+   /*{
       title: "Basic",
       subtitle: "Great for portfolio reviews",
       price: "$300",
@@ -28,7 +28,7 @@ export const pricingData = {
         text: "Get started",
         link: "https://forms.gle/ZfZVK1SQxNuZ67a18",
       },
-    },
+    },*/
     {
       title: "Advanced",
       subtitle: "Customized Programs at Request",
@@ -38,8 +38,8 @@ export const pricingData = {
         text: "Contact Us",
         link: "https://forms.gle/ZfZVK1SQxNuZ67a18",
       },
-    },
-  ],*/
+    },*
+  ],
   pricingCardBig: {
     title: "The Avium Mentorship",
     cta: {
