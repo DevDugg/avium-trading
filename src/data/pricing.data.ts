@@ -1,7 +1,7 @@
 export const pricingData = {
   title: "Our Products",
-  subtitle_1: "Avium Trading Mentorship",
-  subtitle_2: "1 - on - 1",
+  subtitle_1: "Trading Mentorship",
+  subtitle_2: "1 - on - 1 Programs",
 
    smallPricingCards: [
     //   These objects can have 2 options:
@@ -35,7 +35,7 @@ export const pricingData = {
       note: "Custom rate",
       features: ["Retainers", "Customized Programs"],
       cta: {
-        text: "Contact Us",
+        text: "Book a Call",
         link: "https://forms.gle/ZfZVK1SQxNuZ67a18",
       },
     },
@@ -43,7 +43,7 @@ export const pricingData = {
   pricingCardBig: {
     title: "The Avium Mentorship",
     cta: {
-      text: "Contact Us",
+      text: "Book a Call",
       link: "#contact",
     },
     subtitle:
