@@ -7,16 +7,6 @@ export const pricingData = {
     //   These objects can have 2 options:
     //   1. Contains price - if the pricing is not included, the note will be big
     //   2. Doesn't contain price - if the pricing is not included, the note will be small
-   {
-      title: "1-on-1 Mentorship",
-      subtitle: "Learn at your own pace with our 1-on-1 Education programs. Our 1-on-1 Mentorships are designed for traders and investors with at least a $50k portfolio, who are looking for hands-on support on a flexible schedule.",
-      note: "",
-      features: ["5 Session Minimum", "Trading Education", "50k Minimum Portfolio Size",],
-      cta: {
-        text: "Book a Call",
-        link: "#contact",
-      },
-    },
     /*{
       title: "Optimal",
       subtitle: "Personalized Curriculum",
