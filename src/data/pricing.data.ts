@@ -8,11 +8,10 @@ export const pricingData = {
     //   1. Contains price - if the pricing is not included, the note will be big
     //   2. Doesn't contain price - if the pricing is not included, the note will be small
    {
-      title: "Basic",
-      subtitle: "Learn at your own pace",
-      price: "$166-300",
-      note: "per session",
-      features: ["5 Session Minimum", "Portfolio Reviews", "Trading Education"],
+      title: "1-on-1 Mentorship",
+      subtitle: "Learn at your own pace with our 1-on-1 Education programs. Our 1-on-1 Mentorships are designed for traders and investors with at least a $50k portfolio, who are looking for hands-on support on a flexible schedule.",
+      note: "Custom Rate",
+      features: ["5 Session Minimum", "Trading Education", "50k Minimum Portfolio Size",],
       cta: {
         text: "Book a Call",
         link: "#contact",
@@ -30,10 +29,10 @@ export const pricingData = {
       },
     },*/
     {
-      title: "Advanced",
-      subtitle: "Our Advanced programs are flexible 1-on-1 programs designed to provide long term support for traders and investors with at least a $100k portfolio value. We teach you how to trade and invest in crypto to achieve strong growth.",
+      title: "1-on-1 Advanced",
+      subtitle: "Our Advanced programs are flexible 1-on-1 programs designed to provide long term support for traders and investors with at least a $100k portfolio. We teach you how to trade and invest in crypto & broader asset markets to achieve your growth goals.",
       note: "Custom rate",
-      features: ["Retainers", "Customized Programs", "$100k minimum portfolio size",],
+      features: ["Retainers", "Customized Programs", "$100k Minimum Portfolio Size",],
       cta: {
         text: "Book a Call",
         link: "#contact",
