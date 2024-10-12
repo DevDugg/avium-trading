@@ -1,7 +1,7 @@
 export const pricingData = {
   title: "Our Products",
   subtitle_1: "Trading Mentorship",
-  subtitle_2: "1 - on - 1  Programs",
+  subtitle_2: "1-on-1 Programs",
 
    smallPricingCards: [
     //   These objects can have 2 options:
@@ -19,7 +19,7 @@ export const pricingData = {
       },
     },*/
     {
-      title: "1 - on - 1 Mentorship",
+      title: "Premium 1-on-1 Mentorship",
       subtitle: "Our 1-on-1 programs are flexible programs designed to provide long term support for traders and investors with portfolios greater than $100k. We'll teach you how to trade and invest in crypto & broader asset markets to achieve your growth goals.",
       note: "",
       features: ["Retainers", "Customized Programs", "Trading & Investing",],
