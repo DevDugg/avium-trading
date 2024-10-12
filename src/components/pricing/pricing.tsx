@@ -23,7 +23,7 @@ const Pricing = () => {
           </div>
           <div className="flex flex-col gap-6">
             <h3 className="text-H3 font-bold max-lg:text-xl max-[420px]:hidden">{subtitle_2}</h3>
-            <div className="grid grid-cols-TWO gap-2 max-[1090px]:flex max-[1090px]:flex-col">
+            <div className="grid grid-cols-ONE gap-2 max-[1090px]:flex max-[1090px]:flex-col">
               {pricingCards.map((card, index) => (
                 <AnimateInView key={index} {...defaultScrollVariants} transition={{ delay: 0.2 + 0.2 * index }}>
                   <PricingCard {...card} />
