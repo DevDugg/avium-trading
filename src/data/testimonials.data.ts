@@ -1,5 +1,5 @@
 export const testimonialsData = {
-  title: "What others say about us",
+  title: "What our students say about us",
   // The testimonials are repeated to make the section look more filled
   testimonials: [
     //   Original testimonials:
