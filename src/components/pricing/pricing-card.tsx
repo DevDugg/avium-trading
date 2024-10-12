@@ -1,4 +1,4 @@
-{/* import CTA from "./cta"; */}
+/* import CTA from "./cta"; */
 import CTALink from "../cta-link";
 import Feature from "./feature";
 
