@@ -31,7 +31,7 @@ export const pricingData = {
     },*/
     {
       title: "Advanced",
-      subtitle: "Our Advanced programs are flexible 1-on-1 programs designed for traders and investors with at least a $100k portfolio value. We teach you how to trade and invest in crypto to achieve strong growth.",
+      subtitle: "Our Advanced programs are flexible 1-on-1 programs designed to provide long term support for traders and investors with at least a $100k portfolio value. We teach you how to trade and invest in crypto to achieve strong growth.",
       note: "Custom rate",
       features: ["Retainers", "Customized Programs", "$100k minimum portfolio size",],
       cta: {
