@@ -38,7 +38,7 @@ export const pricingData = {
         text: "Contact Us",
         link: "https://forms.gle/ZfZVK1SQxNuZ67a18",
       },
-    },*
+    },
   ],
   pricingCardBig: {
     title: "The Avium Mentorship",
