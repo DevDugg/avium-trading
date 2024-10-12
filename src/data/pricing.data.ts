@@ -22,7 +22,7 @@ export const pricingData = {
       title: "Premium Mentorship",
       subtitle: "Our Premium Mentorship offers 1-on-1 programs tailor made to the individual and designed to provide support for traders and investors with crypto portfolios between $50,000-$1,000,000. We'll teach you how to trade and invest in crypto & broader asset markets to achieve your growth goals.",
       note: "",
-      features: ["Retainers", "Customized Programs", "Support with Trading & Investing",],
+      features: ["Support with Trading & Investing", "Customized Programs", "Retainers",],
       cta: {
         text: "Book a Call",
         link: "#contact",
