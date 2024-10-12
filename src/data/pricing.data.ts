@@ -3,11 +3,11 @@ export const pricingData = {
   subtitle_1: "Trading mentorship",
   subtitle_2: "1 - on - 1",
 
-  smallPricingCards: [
+   /*smallPricingCards: [
     //   These objects can have 2 options:
     //   1. Contains price - if the pricing is not included, the note will be big
     //   2. Doesn't contain price - if the pricing is not included, the note will be small
-    {
+   {
       title: "Basic",
       subtitle: "Great for portfolio reviews",
       price: "$300",
@@ -39,7 +39,7 @@ export const pricingData = {
         link: "https://forms.gle/ZfZVK1SQxNuZ67a18",
       },
     },
-  ],
+  ],*/
   pricingCardBig: {
     title: "The Avium Mentorship",
     cta: {
