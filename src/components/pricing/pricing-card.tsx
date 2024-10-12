@@ -1,4 +1,5 @@
-import CTA from "./cta";
+{/* import CTA from "./cta"; */}
+import CTALink from "../cta-link";
 import Feature from "./feature";
 
 interface PricingCardProps {
@@ -30,7 +31,8 @@ const PricingCard = ({ features, note, subtitle, title, price, cta }: PricingCar
           <span className="text-[48px] max-[420px]:text-[32px]">{note}</span>
         )}
       </div>
-      <CTA link={cta.link} title={cta.text} />
+      {/* <CTA link={cta.link} title={cta.text} /> */}
+      <CTALink href={cta.link} title={cta.text} width="100%" />
       <div className="flex flex-col gap-4">
         <span className="font-medium text-2xl max-[420px]:text-xl">Features</span>
         <div className="flex flex-col gap-4">
