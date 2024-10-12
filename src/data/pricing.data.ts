@@ -36,7 +36,7 @@ export const pricingData = {
       link: "#contact",
     },
     subtitle:
-      "Are you ready to become a winner? Our seasoned mentors are here to show you the ropes. Designed for Beginners & Intermediates with portfolios between $5,000-$50,000. In just 60 days we'll simplify the market for you and help you build your winning strategies.",
+      "Are you ready to become a winner? Our seasoned mentors are here to show you the ropes in our cohort-based mentorship. Designed for Beginners & Intermediates with portfolios between $5,000-$50,000. In just 60 days we'll simplify the market for you and help you build your winning strategies.",
     features: [
       "18 Livestreams covering everything from core trading principles to advanced techniques for trading and investing.",
       "Three 1-on-1 sessions with one of our mentors",
