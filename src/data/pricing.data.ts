@@ -19,10 +19,10 @@ export const pricingData = {
       },
     },*/
     {
-      title: "Premium 1-on-1 Mentorship",
-      subtitle: "Our 1-on-1 programs are flexible programs designed to provide long term support for traders and investors with portfolios greater than $100k. We'll teach you how to trade and invest in crypto & broader asset markets to achieve your growth goals.",
+      title: "Premium Mentorship",
+      subtitle: "Our Premium Mentorship offers 1-on-1 programs tailor made to the individual and designed to provide support for traders and investors with portfolios greater than $100k. We'll teach you how to trade and invest in crypto & broader asset markets to achieve your growth goals.",
       note: "",
-      features: ["Retainers", "Customized Programs", "Trading & Investing",],
+      features: ["Retainers", "Customized Programs", "Support with Trading & Investing",],
       cta: {
         text: "Book a Call",
         link: "#contact",
