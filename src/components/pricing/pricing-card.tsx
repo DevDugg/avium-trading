@@ -18,7 +18,7 @@ const PricingCard = ({ features, note, subtitle, title, price, cta }: PricingCar
     <div className="pricing-card px-6 py-10 rounded-3xl flex flex-col gap-6 bg-LIGHTBLACK max-[1090px]:gap-8 max-[420px]:p-6">
       <div className="flex flex-col gap-2">
         <h3 className="text-H3 font-bold max-[420px]:text-lg">{title}</h3>
-        <p className="text-lg text-GREEN max-[420px]:text-BASE">{subtitle}</p>
+        <p className="text-lg text-GRAY max-[420px]:text-BASE">{subtitle}</p>
       </div>
       <div className="flex flex-col gap-2">
         {price ? (
