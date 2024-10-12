@@ -20,7 +20,7 @@ export const pricingData = {
     },*/
     {
       title: "Premium Mentorship",
-      subtitle: "Our Premium Mentorship offers 1-on-1 programs tailor made to the individual and designed to provide support for traders and investors with portfolios greater than $100k. We'll teach you how to trade and invest in crypto & broader asset markets to achieve your growth goals.",
+      subtitle: "Our Premium Mentorship offers 1-on-1 programs tailor made to the individual and designed to provide support for traders and investors with crypto portfolios between $50,000-$1,000,000. We'll teach you how to trade and invest in crypto & broader asset markets to achieve your growth goals.",
       note: "",
       features: ["Retainers", "Customized Programs", "Support with Trading & Investing",],
       cta: {
@@ -36,13 +36,12 @@ export const pricingData = {
       link: "#contact",
     },
     subtitle:
-      "Are you ready to become a winner? Our seasoned mentors are here to show you the ropes. Whether you're a beginner or you've been trying to learn for a while, in just 60 days we'll simplify the market for you and help you build your winning strategies.",
+      "Are you ready to become a winner? Our seasoned mentors are here to show you the ropes. Designed for Beginners & Intermediates with portfolios between $5,000-$50,000. In just 60 days we'll simplify the market for you and help you build your winning strategies.",
     features: [
       "18 Livestreams covering everything from core trading principles to advanced techniques for trading and investing.",
       "Three 1-on-1 sessions with one of our mentors",
       "Written trading guide covering the core content",
       "A discord chat with the mentors to ask questions",
-      "$5,000 minimum portfolio size required",
       "And much more!"
     ],
   },
