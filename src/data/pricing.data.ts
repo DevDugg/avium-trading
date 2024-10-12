@@ -1,7 +1,7 @@
 export const pricingData = {
   title: "Our Products",
   subtitle_1: "Trading Mentorship",
-  subtitle_2: "1 - on - 1 Programs",
+  subtitle_2: "1 - on - 1  Programs",
 
    smallPricingCards: [
     //   These objects can have 2 options:
