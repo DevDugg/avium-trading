@@ -3,8 +3,7 @@ export const pricingData = {
   subtitle_1: "Avium Trading Mentorship",
   subtitle_2: "1 - on - 1",
 
-   //smallPricingCards: [
-   pricingCardBig: [
+   smallPricingCards: [
     //   These objects can have 2 options:
     //   1. Contains price - if the pricing is not included, the note will be big
     //   2. Doesn't contain price - if the pricing is not included, the note will be small
@@ -33,7 +32,7 @@ export const pricingData = {
     {
       title: "Advanced",
       subtitle: "Customized Programs at Request",
-      // note: "Custom rate",
+      note: "Custom rate",
       features: ["Retainers", "Customized Programs"],
       cta: {
         text: "Contact Us",
