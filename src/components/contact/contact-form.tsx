@@ -1,7 +1,7 @@
 "use client";
 
 import { ZodType, z } from "zod";
-
+import { useRouter } from "next/navigation";
 import AnimateInView from "../animate-in-view";
 import FormDropdown from "./form-dropdown";
 import FormField from "./form-field";
@@ -23,6 +23,7 @@ export interface FormData {
 export type ValidFieldNames = "email_or_discord" | "experience" | "risk_capital";
 
 const ContactForm = () => {
+  const router = useRouter();
   const [capital, setCapital] = useState<string>("$5,000-$9,999");
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
@@ -63,6 +64,7 @@ const ContactForm = () => {
     toast("Form submitted successfully!", {
       progressStyle: { background: colors.ACCENT },
     });
+    router.push("https://www.google.com");
   };
 
   return (
@@ -128,4 +130,5 @@ const ContactForm = () => {
     </form>
   );
 };
+
 export default ContactForm;
