@@ -1,7 +1,7 @@
 "use client";
 
 import { ZodType, z } from "zod";
-import { useRouter } from 'next/router'; // Import useRouter
+
 import AnimateInView from "../animate-in-view";
 import FormDropdown from "./form-dropdown";
 import FormField from "./form-field";
@@ -25,7 +25,6 @@ export type ValidFieldNames = "email_or_discord" | "experience" | "risk_capital"
 const ContactForm = () => {
   const [capital, setCapital] = useState<string>("$5,000-$9,999");
   const [isLoading, setIsLoading] = useState<boolean>(false);
-  const router = useRouter(); // Initialize router
 
   const formSchema: ZodType<FormData> = z.object({
     email_or_discord: z
@@ -54,20 +53,16 @@ const ContactForm = () => {
       },
     });
 
-    if (response === undefined || response.status !== 200 || !response.ok) {
+    if (response === undefined || response.status !== 200 || !response.ok || !response.ok.toString()) {
       setIsLoading(false);
       return toast("Failed to submit the form", {
         progressStyle: { background: colors.RED },
       });
     }
-
     setIsLoading(false);
     toast("Form submitted successfully!", {
       progressStyle: { background: colors.ACCENT },
     });
-
-    // Redirect to the desired page
-    router.push('https://www.google.com/'); // Replace with your target URL
   };
 
   return (
@@ -133,5 +128,4 @@ const ContactForm = () => {
     </form>
   );
 };
-
 export default ContactForm;
