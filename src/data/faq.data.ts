@@ -1,5 +1,5 @@
 export const faqData = {
-  title: "Have any question?",
+  title: "Have any questions?",
   faqs: [
     {
       question: "Who is the Mentorship for?",
