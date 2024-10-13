@@ -64,7 +64,7 @@ const ContactForm = () => {
     toast("Form submitted successfully!", {
       progressStyle: { background: colors.ACCENT },
     });
-    router.push("https://www.google.com");
+    router.push("https://cal.com/pidgeontrades/quick-chat");
   };
 
   return (
