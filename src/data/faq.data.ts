@@ -12,14 +12,14 @@ export const faqData = {
         "The Mentorship sessions are streamed on Discord. Twice a week, at times that best fit all cohort members' schedules there will be a livestream held within a private discord channel where students can learn and ask questions in real time. Outside of the live sessions the chats can also be used to learn together with the other students and ask questions.",
     },
     {
-      question: "What is the difference between the Mentorship and 1-on-1 Sessions?",
+      question: "What is the difference between the Avium Mentorship and Premium Mentorship ?",
       answer:
-        "The mentorship, while including some 1-on-1 sessions, is primarily structured material designed to teach everything trading and crypto. The 1-on-1 sessions on the other hand are completely personalized, focusing in on whatever particular struggles you might be facing.",
+        "The Avium Mentorship, while including some 1-on-1 sessions, is primarily structured material designed to teach everything trading and crypto. The Premium Mentorship on the other hand is held entirely 1-on-1, in private sessions. Each session is completely personalized, focusing in on your specific needs.",
     },
     {
       question: " How much time commitment is required?",
       answer:
-        "The mentorship only requires 2-3 hours a week. Do keep in mind however, that more time spent on applying the concepts taught will lead to better results. For 1-on-1 sessions it is completely up to you at what pace you'd like to go.",
+        "The mentorship only requires 2-3 hours a week. Do keep in mind however, that more time spent on applying the concepts taught will lead to better results. For the Premium Mentorship we tailor it to your schedule!",
     },
   ],
 };
