@@ -3,12 +3,12 @@ export const guaranteesData = {
   description: "In just 60 days, we'll teach you everything you need to know to trade for yourself.",
   guarantees: [
     {
-      number: 20,
+      number: 22,
       name: "Students Taught",
-      description: "We've turned over 20 people into self-sufficient traders.",
+      description: "We've turned over 22 people into self-sufficient traders.",
     },
     {
-      number: 20,
+      number: 22,
       name: "Recommendations",
       description: "100% of our students would recommend us to their friends.",
     },
