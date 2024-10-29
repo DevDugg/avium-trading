@@ -10,7 +10,7 @@ export const guaranteesData = {
     {
       number: 22,
       name: "Recommendations",
-      description: "100% of our students would recommend us to their friends.",
+      description: "When asked, our students all said they would recommend us to their friends.",
     },
     {
       number: "9.84/10",
