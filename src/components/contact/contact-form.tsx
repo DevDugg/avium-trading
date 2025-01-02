@@ -30,9 +30,9 @@ const ContactForm = () => {
   const formSchema: ZodType<FormData> = z.object({
     email_or_discord: z
       .string()
-      .min(2, { message: "Please enter a valid Discord username or email" })
-      .max(32, { message: "Please enter a valid Discord username or email" })
-      .or(z.string().email({ message: "Please enter a valid Discord username or email" })),
+      .min(2, { message: "Please enter a valid email address" })
+      .max(32, { message: "Please enter a valid email address" })
+      .or(z.string().email({ message: "Please enter a valid email address" })),
     experience: z.string().min(1, { message: "Experience is required" }),
     risk_capital: z.string().min(1, { message: "risk_capital is required" }),
   });
@@ -82,9 +82,9 @@ const ContactForm = () => {
         ></motion.div>
         <AnimateInView {...defaultScrollVariants}>
           <FormField
-            label="Your Discord username or Email"
+            label="Your Email Address"
             type="text"
-            placeholder="johndoe#1234 / johndoe@gmail.com"
+            placeholder="johndoe@gmail.com"
             error={errors.email_or_discord}
             register={register}
             name="email_or_discord"
